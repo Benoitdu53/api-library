@@ -1,1 +1,5 @@
 /home/brichet/IdeaProjects/api-library/repository/src/main/java/com/api/library/App.java
+/home/brichet/IdeaProjects/api-library/repository/src/main/java/com/api/library/repository/CopyDao.java
+/home/brichet/IdeaProjects/api-library/repository/src/main/java/com/api/library/repository/BookDao.java
+/home/brichet/IdeaProjects/api-library/repository/src/main/java/com/api/library/repository/EmpruntDao.java
+/home/brichet/IdeaProjects/api-library/repository/src/main/java/com/api/library/repository/UserDao.java

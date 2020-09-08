@@ -1,1 +1,8 @@
+com/api/library/model/Categorie.class
+com/api/library/model/Copy.class
+com/api/library/model/Library.class
+com/api/library/model/Book.class
+com/api/library/model/User.class
+com/api/library/model/Author.class
+com/api/library/model/Emprunt.class
 com/api/library/App.class
