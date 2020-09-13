@@ -1,8 +1,5 @@
 package com.api.library.model;
 
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
-import org.springframework.stereotype.Controller;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -20,11 +17,23 @@ public class Categorie implements Serializable {
     @Column
     private String label;
 
+    @OneToMany(mappedBy = "categorie")
+    private List<Book> bookList = new ArrayList<>();
+
+    public List<Book> getBookList() {
+        return bookList;
+    }
+
+    public void setBookList(final List<Book> bookList) {
+        this.bookList = bookList;
+    }
+
     @Override
     public String toString() {
         return "Categorie{" +
                 "id=" + id +
                 ", label='" + label + '\'' +
+                ", bookList=" + bookList +
                 '}';
     }
 

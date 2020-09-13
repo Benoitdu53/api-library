@@ -1,9 +1,6 @@
 package com.api.library.model;
 
-
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "copy")
@@ -20,8 +17,9 @@ public class Copy {
     @Column(name = "format")
     private String format;
 
-    @OneToMany(mappedBy = "copy")
-    private List<Emprunt> copyList = new ArrayList<>();
+    @ManyToOne
+    @JoinColumn(name = "book_id")
+    private Book book;
 
     @ManyToOne
     @JoinColumn(name = "library_id")
@@ -33,7 +31,7 @@ public class Copy {
                 "id=" + id +
                 ", number=" + number +
                 ", format='" + format + '\'' +
-                ", copyList=" + copyList +
+                ", book=" + book +
                 ", library=" + library +
                 '}';
     }
@@ -62,19 +60,19 @@ public class Copy {
         this.format = format;
     }
 
-    public List<Emprunt> getCopyList() {
-        return copyList;
-    }
-
-    public void setCopyList(final List<Emprunt> copyList) {
-        this.copyList = copyList;
-    }
-
     public Library getLibrary() {
         return library;
     }
 
     public void setLibrary(final Library library) {
         this.library = library;
+    }
+
+    public Book getBook() {
+        return book;
+    }
+
+    public void setBook(final Book book) {
+        this.book = book;
     }
 }

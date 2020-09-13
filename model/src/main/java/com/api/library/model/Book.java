@@ -2,7 +2,9 @@ package com.api.library.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "book")
@@ -37,6 +39,9 @@ public class Book implements Serializable {
     @JoinColumn(name = "author_id")
     private Author author;
 
+    @OneToMany(mappedBy = "book")
+    List<Copy> copyList = new ArrayList<>();
+
     public Book() {
 
     }
@@ -51,7 +56,25 @@ public class Book implements Serializable {
                 ", synopsis='" + synopsis + '\'' +
                 ", cover='" + cover + '\'' +
                 ", categorie=" + categorie +
+                ", author=" + author +
+                ", copyList=" + copyList +
                 '}';
+    }
+
+    public List<Copy> getCopyList() {
+        return copyList;
+    }
+
+    public void setCopyList(final List<Copy> copyList) {
+        this.copyList = copyList;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(final Author author) {
+        this.author = author;
     }
 
     public Categorie getCategorie() {

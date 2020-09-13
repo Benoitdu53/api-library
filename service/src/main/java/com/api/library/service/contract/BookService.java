@@ -31,6 +31,6 @@ public interface BookService {
      * @param id catégorie
      * @return  les livres selon la catégorie
      */
-    List<Book> getBookByCategorie(Long id);
+    List<Book> getBookByCategorie(String categorie);
 
 }

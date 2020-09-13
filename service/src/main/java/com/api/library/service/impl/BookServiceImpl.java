@@ -1,5 +1,7 @@
 package com.api.library.service.impl;
 
+import com.api.library.dto.BookDto;
+import com.api.library.mapper.BookMapper;
 import com.api.library.model.Book;
 import com.api.library.repository.BookDao;
 import com.api.library.service.contract.BookService;
@@ -37,8 +39,8 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public List<Book> getBookByCategorie(final Long id) {
-        return null;
+    public List<Book> getBookByCategorie(String categorie) {
+        return bookDao.getBookByCategorie(categorie);
     }
 
 }
