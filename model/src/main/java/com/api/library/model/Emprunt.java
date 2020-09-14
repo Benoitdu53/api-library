@@ -14,13 +14,13 @@ public class Emprunt implements Serializable {
     @Column
     private Long id;
 
-    @Column(name = "empruntDate")
+    @Column(name = "emprunt_date")
     private Date empruntDate = new Date();
 
-    @Column(name = "returnDate")
+    @Column(name = "return_date")
     private Date returnDate;
 
-    @Column(name = "isExtended")
+    @Column(name = "is_extended")
     private Boolean isExtended;
 
     @ManyToOne

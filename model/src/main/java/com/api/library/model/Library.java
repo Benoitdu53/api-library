@@ -20,7 +20,7 @@ public class Library implements Serializable {
     @Column(name = "adress")
     private String adress;
 
-    @Column(name = "phoneNum")
+    @Column(name = "phone_num")
     private String phoneNum;
 
     @Column(name = "email")

@@ -1,5 +1,8 @@
 package com.api.library.model;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -18,7 +21,7 @@ public class Book implements Serializable {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "pubDate")
+    @Column(name = "pub_date")
     private Date pubDate;
 
     @Column(name = "page")

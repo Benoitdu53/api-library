@@ -1,6 +1,5 @@
 package com.api.library.dto;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -12,9 +11,25 @@ public class BookDto {
     private int page;
     private String synopsis;
     private String cover;
-    private CategorieDto categorieDto;
-    private AuthorDto authorDto;
-    private List<CopyDto> copyDtoList = new ArrayList<>();
+    private CategorieDto categorie;
+    private AuthorDto author;
+    private List<CopyDto> copyList;
+
+    public AuthorDto getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(final AuthorDto author) {
+        this.author = author;
+    }
+
+    public CategorieDto getCategorie() {
+        return categorie;
+    }
+
+    public void setCategorie(final CategorieDto categorie) {
+        this.categorie = categorie;
+    }
 
     public Long getId() {
         return id;
@@ -64,27 +79,11 @@ public class BookDto {
         this.cover = cover;
     }
 
-    public CategorieDto getCategorieDto() {
-        return categorieDto;
+    public List<CopyDto> getCopyList() {
+        return copyList;
     }
 
-    public void setCategorieDto(final CategorieDto categorieDto) {
-        this.categorieDto = categorieDto;
-    }
-
-    public AuthorDto getAuthorDto() {
-        return authorDto;
-    }
-
-    public void setAuthorDto(final AuthorDto authorDto) {
-        this.authorDto = authorDto;
-    }
-
-    public List<CopyDto> getCopyDtoList() {
-        return copyDtoList;
-    }
-
-    public void setCopyDtoList(final List<CopyDto> copyDtoList) {
-        this.copyDtoList = copyDtoList;
+    public void setCopyList(final List<CopyDto> copyList) {
+        this.copyList = copyList;
     }
 }

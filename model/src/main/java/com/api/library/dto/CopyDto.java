@@ -1,8 +1,6 @@
 package com.api.library.dto;
 
-import com.api.library.model.Book;
 import com.api.library.model.Emprunt;
-import com.api.library.model.Library;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,16 +11,7 @@ public class CopyDto {
     private int number;
     private String format;
     private List<Emprunt> empruntList = new ArrayList<>();
-    private BookDto bookDto;
-    private LibraryDto libraryDto;
-
-    public BookDto getBookDto() {
-        return bookDto;
-    }
-
-    public void setBookDto(final BookDto bookDto) {
-        this.bookDto = bookDto;
-    }
+    private LibraryDto library;
 
     public Long getId() {
         return id;
@@ -56,11 +45,11 @@ public class CopyDto {
         this.empruntList = empruntList;
     }
 
-    public LibraryDto getLibraryDto() {
-        return libraryDto;
+    public LibraryDto getLibrary() {
+        return library;
     }
 
-    public void setLibraryDto(final LibraryDto libraryDto) {
-        this.libraryDto = libraryDto;
+    public void setLibrary(final LibraryDto library) {
+        this.library = library;
     }
 }

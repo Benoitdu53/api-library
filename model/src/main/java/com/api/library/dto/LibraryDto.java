@@ -1,8 +1,5 @@
 package com.api.library.dto;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class LibraryDto {
 
     private Long id;
@@ -10,7 +7,6 @@ public class LibraryDto {
     private String adress;
     private String phoneNum;
     private String email;
-    private List<CopyDto> copyDtoList = new ArrayList<>();
 
     public Long getId() {
         return id;
