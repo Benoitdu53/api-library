@@ -28,19 +28,46 @@ public class BookServiceImpl implements BookService {
         return bookDao.getAllBooks();
     }
 
+    /**
+     *
+     * @param id du livre
+     * @return la liste des books par id
+     */
     @Override
     public Book getBookById(final Long id) {
         return null;
     }
 
+    /**
+     *
+     * @param book
+     * @return Ajoute un book
+     */
     @Override
     public Book addBook(final Book book) {
         return null;
     }
 
+    /**
+     *
+     * @param categorie
+     * @return la liste des books selon la catégorie
+     */
     @Override
     public List<Book> getBookByCategorie(String categorie) {
         return bookDao.getBookByCategorie(categorie);
+    }
+
+    /**
+     *
+     * @param saisie
+     * @return la liste des books selon la saisie de recherche
+     */
+    @Override
+    public List<Book> getBookBySearch(String saisie) {
+        saisie = saisie.replaceAll("\\s","");
+        saisie = saisie+"%";
+        return bookDao.getBookBySearch(saisie);
     }
 
 }

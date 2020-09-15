@@ -28,9 +28,15 @@ public interface BookService {
 
     /**
      *
-     * @param id catégorie
      * @return  les livres selon la catégorie
      */
     List<Book> getBookByCategorie(String categorie);
+
+    /**
+     *
+     * @param saisie
+     * @return la listes des livres par rapport à la recherche
+     */
+    List<Book> getBookBySearch(String saisie);
 
 }

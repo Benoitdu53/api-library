@@ -18,4 +18,6 @@ public interface BookDao extends JpaRepository<Book, Long> {
     @Query("SELECT b FROM Book b WHERE b.categorie.label = :categorie")
     List<Book> getBookByCategorie(@Param("categorie") String categorie);
 
+    @Query("SELECT b FROM Book b WHERE (b.title LIKE :saisie) OR (b.author.lastName LIKE :saisie) OR (b.author.firstName LIKE :saisie)")
+    List<Book> getBookBySearch(@Param("saisie")String saisie);
 }
