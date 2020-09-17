@@ -11,10 +11,6 @@ public interface CustomerService {
     CustomerDto findByEmail (String email);
     // Inscrit un nouvel utilisateur
     CustomerDto saveCustomer(CustomerDto customerDto);
-    // Ajoute un role
-    AppRoleDto saveRole(AppRoleDto appRoleDto);
-    //Ajoute un role au client
-    void addRoleToCustomer(String email, String rolename);
     // Retourne l'utilisateur
     CustomerDto findCustomerByEmail(String email);
 

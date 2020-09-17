@@ -57,32 +57,6 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     /**
-     *  Ajoute un role en base
-     * @param appRoleDto
-     * @return le role ajouté
-     */
-    @Override
-    public AppRoleDto saveRole(final AppRoleDto appRoleDto) {
-
-        AppRole appRole = AppRoleMapper.INSTANCE.appRoleDtoToAppRole(appRoleDto);
-        appRole = roleRepository.save(appRole);
-
-        return AppRoleMapper.INSTANCE.appRoleToAppRoleDto(appRole);
-    }
-
-    /**
-     * Ajoute un role à un utilisateur
-     * @param email
-     * @param rolename
-     */
-    @Override
-    public void addRoleToCustomer(final String email, final String rolename) {
-        AppRole appRole = roleRepository.findByRoleName(rolename);
-        Customer customer = customerRepository.findByEmail(email);
-        customer.getRoles().add(appRole);
-    }
-
-    /**
      *
      * @param email
      * @return l'utilisateur selon le mail
