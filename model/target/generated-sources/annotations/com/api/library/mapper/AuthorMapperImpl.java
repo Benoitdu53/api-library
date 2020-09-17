@@ -6,8 +6,8 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-09-14T23:39:25+0200",
-    comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 11.0.6 (Ubuntu)"
+    date = "2020-09-17T11:46:47+0200",
+    comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 11.0.8 (Ubuntu)"
 )
 public class AuthorMapperImpl implements AuthorMapper {
 
@@ -24,5 +24,20 @@ public class AuthorMapperImpl implements AuthorMapper {
         authorDto.setLastName( author.getLastName() );
 
         return authorDto;
+    }
+
+    @Override
+    public Author authorDtoToAuthor(AuthorDto authorDto) {
+        if ( authorDto == null ) {
+            return null;
+        }
+
+        Author author = new Author();
+
+        author.setId( authorDto.getId() );
+        author.setFirstName( authorDto.getFirstName() );
+        author.setLastName( authorDto.getLastName() );
+
+        return author;
     }
 }

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface BookDao extends JpaRepository<Book, Long> {
+public interface BookRepository extends JpaRepository<Book, Long> {
 
     // Récupère la liste des books
     @Query("SELECT b FROM Book b")

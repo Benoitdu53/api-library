@@ -5,12 +5,93 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38a351d2-b8a0-4bca-817d-5fd198804d6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/library_role.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/dto/AppRoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/mapper/AppRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/model/AppRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/AppRoleMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CustomerMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/UserDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/BookDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/api/library/dto/EmpruntDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/dto/EmpruntDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/api/library/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/dto/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/api/library/mapper/AuthorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/mapper/AuthorMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/api/library/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/api/library/model/Emprunt.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/model/Emprunt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/api/library/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CopyDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CopyDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/EmpruntDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/EmpruntDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/LibraryDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/LibraryDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/UserMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/UserMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Emprunt.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Emprunt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/AuthorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/AuthorMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/BookMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/BookMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CategorieMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CategorieMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CopyMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CopyMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/LibraryMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/LibraryMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/UserMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/model-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/CopyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/CopyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/EmpruntDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/EmpruntRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/classes/com/api/library/repository/BookDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/classes/com/api/library/repository/CopyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/classes/com/api/library/repository/EmpruntDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/classes/com/api/library/repository/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/repository-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/repository-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/CopyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/CopyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/UserService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/CopyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/CopyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/EmpruntServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/EmpruntServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/contract/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/CopyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/CopyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/EmpruntServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/EmpruntServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/classes/com/api/library/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/target/webapp-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/webapp-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +101,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -108,13 +189,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -292,7 +375,8 @@
       <workItem from="1600093182314" duration="2396000" />
       <workItem from="1600111744328" duration="9057000" />
       <workItem from="1600121496274" duration="98000" />
-      <workItem from="1600194152063" duration="3197000" />
+      <workItem from="1600194152063" duration="4203000" />
+      <workItem from="1600326007963" duration="9632000" />
     </task>
     <servers />
   </component>
@@ -308,6 +392,10 @@
     </state>
     <state x="861" y="396" width="187" height="233" key="#Assign_Data_Sources/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600119664136" />
     <state x="2781" y="405" width="187" height="255" key="#Assign_Data_Sources/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599596493858" />
+    <state x="589" y="187" width="732" height="644" key="#Inspections" timestamp="1600330122369">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="589" y="187" width="732" height="644" key="#Inspections/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600330122369" />
     <state x="2573" y="344" width="604" height="357" key="#Notifications" timestamp="1599234882662">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -320,10 +408,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="418" y="164" width="894" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1599594090365" />
-    <state x="768" y="193" width="565" height="703" key="#com.intellij.ide.util.MemberChooser" timestamp="1600199849644">
+    <state x="768" y="193" width="565" height="710" key="#com.intellij.ide.util.MemberChooser" timestamp="1600335120647">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="768" y="193" width="565" height="703" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600199849644" />
+    <state x="768" y="193" width="565" height="710" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600335120647" />
     <state x="541" y="430" width="837" height="158" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1599485891973">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -332,6 +420,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="713" y="387" width="494" height="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1599485893387" />
+    <state x="635" y="17" width="630" height="992" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600335577697">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="635" y="17" width="630" height="992" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600335577697" />
     <state x="718" y="250" key="#xdebugger.evaluate" timestamp="1599917696247">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -345,26 +437,26 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2734" y="419" width="470" height="235" key="Github.ShareDialog/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599234476441" />
-    <state width="1874" height="192" key="GridCell.Tab.0.bottom" timestamp="1600200894657">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1874" height="198" key="GridCell.Tab.0.bottom" timestamp="1600336616596">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="192" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600200570942" />
-    <state width="1874" height="192" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600200894657" />
-    <state width="1874" height="192" key="GridCell.Tab.0.center" timestamp="1600200894657">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1874" height="198" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600336616596" />
+    <state width="1874" height="192" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600201934437" />
+    <state width="1874" height="198" key="GridCell.Tab.0.center" timestamp="1600336616596">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="192" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600200570941" />
-    <state width="1874" height="192" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600200894657" />
-    <state width="1874" height="192" key="GridCell.Tab.0.left" timestamp="1600200894657">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1874" height="198" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600336616596" />
+    <state width="1874" height="192" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600201934437" />
+    <state width="1874" height="198" key="GridCell.Tab.0.left" timestamp="1600336616596">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="192" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600200570941" />
-    <state width="1874" height="192" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600200894657" />
-    <state width="1874" height="192" key="GridCell.Tab.0.right" timestamp="1600200894657">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1874" height="198" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600336616596" />
+    <state width="1874" height="192" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600201934437" />
+    <state width="1874" height="198" key="GridCell.Tab.0.right" timestamp="1600336616596">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="192" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600200570941" />
-    <state width="1874" height="192" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600200894657" />
+    <state width="1874" height="198" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600336616596" />
+    <state width="1874" height="192" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600201934437" />
     <state width="1874" height="324" key="GridCell.Tab.1.bottom" timestamp="1600088467103">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -401,10 +493,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="543" y="252" width="824" height="515" key="IDE.errors.dialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600119779153" />
-    <state x="493" y="164" width="924" height="691" key="Maven.ArtifactSearchDialog" timestamp="1599486432311">
+    <state x="493" y="164" width="924" height="691" key="Maven.ArtifactSearchDialog" timestamp="1600333942056">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="493" y="164" width="924" height="691" key="Maven.ArtifactSearchDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1599486432311" />
+    <state x="493" y="164" width="924" height="691" key="Maven.ArtifactSearchDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600333942056" />
     <state x="443" y="83" width="1024" height="852" key="SettingsEditor" timestamp="1599763314449">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -422,10 +514,10 @@
     </state>
     <state x="821" y="390" width="377" height="297" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600120465364" />
     <state x="2741" y="398" width="367" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599751264105" />
-    <state x="713" y="323" width="484" height="397" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1600120474275">
+    <state x="713" y="323" width="484" height="400" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1600330254735">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="713" y="323" width="484" height="397" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600120474275" />
+    <state x="713" y="323" width="484" height="400" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600330254735" />
     <state x="783" y="234" width="344" height="550" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1600116200636">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -434,10 +526,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="635" y="54" width="885" height="661" key="dock-window-1/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599753156742" />
-    <state x="651" y="114" width="971" height="783" key="find.popup" timestamp="1600115877309">
+    <state x="616" y="124" width="971" height="783" key="find.popup" timestamp="1600332294412">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="651" y="114" width="971" height="783" key="find.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600115877309" />
+    <state x="616" y="124" width="971" height="783" key="find.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600332294412" />
     <state x="2679" y="420" width="392" height="206" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1599235018354">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -456,10 +548,10 @@
     </state>
     <state x="624" y="241" width="672" height="618" key="run.anything.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1599487177956" />
     <state x="2544" y="235" width="672" height="677" key="run.anything.popup/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599233443346" />
-    <state x="623" y="222" width="672" height="678" key="search.everywhere.popup" timestamp="1600199673145">
+    <state x="623" y="222" width="672" height="678" key="search.everywhere.popup" timestamp="1600337707094">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="623" y="222" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600199673145" />
+    <state x="623" y="222" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600337707094" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

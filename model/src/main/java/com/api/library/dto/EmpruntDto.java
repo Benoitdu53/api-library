@@ -1,8 +1,5 @@
 package com.api.library.dto;
 
-import com.api.library.model.Copy;
-import com.api.library.model.User;
-
 import java.util.Date;
 
 public class EmpruntDto {
@@ -12,14 +9,14 @@ public class EmpruntDto {
     private Date returnDate;
     private Boolean isExtended;
     private CopyDto copyDto;
-    private UserDto userDto;
+    private CustomerDto customerDto;
 
-    public UserDto getUserDto() {
-        return userDto;
+    public CustomerDto getUserDto() {
+        return customerDto;
     }
 
-    public void setUserDto(final UserDto userDto) {
-        this.userDto = userDto;
+    public void setUserDto(final CustomerDto customerDto) {
+        this.customerDto = customerDto;
     }
 
     public CopyDto getCopyDto() {

@@ -29,7 +29,7 @@ public class Emprunt implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;
+    private Customer customer;
 
     @Override
     public String toString() {
@@ -39,7 +39,7 @@ public class Emprunt implements Serializable {
                 ", returnDate=" + returnDate +
                 ", isExtended=" + isExtended +
                 ", copy=" + copy +
-                ", user=" + user +
+                ", user=" + customer +
                 '}';
     }
 
@@ -83,11 +83,11 @@ public class Emprunt implements Serializable {
         this.copy = copy;
     }
 
-    public User getUser() {
-        return user;
+    public Customer getUser() {
+        return customer;
     }
 
-    public void setUser(final User user) {
-        this.user = user;
+    public void setUser(final Customer customer) {
+        this.customer = customer;
     }
 }

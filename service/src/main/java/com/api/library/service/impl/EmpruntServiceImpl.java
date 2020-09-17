@@ -1,8 +1,7 @@
 package com.api.library.service.impl;
 
 import com.api.library.model.Emprunt;
-import com.api.library.repository.EmpruntDao;
-import com.api.library.service.contract.BookService;
+import com.api.library.repository.EmpruntRepository;
 import com.api.library.service.contract.EmpruntService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +13,7 @@ public class EmpruntServiceImpl implements EmpruntService {
 
     // ----------------- Injections de dépendances ----------------- //
     @Autowired
-    private EmpruntDao empruntDao;
+    private EmpruntRepository empruntRepository;
 
     // -----------------------------------------------------  //
 

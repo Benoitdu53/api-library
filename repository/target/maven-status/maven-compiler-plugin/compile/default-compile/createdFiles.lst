@@ -1,5 +1,6 @@
-com/api/library/repository/UserDao.class
-com/api/library/repository/CopyDao.class
-com/api/library/repository/EmpruntDao.class
-com/api/library/repository/BookDao.class
+com/api/library/repository/RoleRepository.class
+com/api/library/repository/CopyRepository.class
+com/api/library/repository/BookRepository.class
+com/api/library/repository/CustomerRepository.class
 com/api/library/App.class
+com/api/library/repository/EmpruntRepository.class

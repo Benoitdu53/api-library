@@ -1,9 +1,10 @@
 package com.api.library.dto;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
-public class UserDto {
+public class CustomerDto {
 
     private Long id;
     private String firstName;
@@ -14,6 +15,15 @@ public class UserDto {
     private String email;
     private String password;
     private List<EmpruntDto> empruntDtoList = new ArrayList<>();
+    private List<AppRoleDto> appRoleDtos = new ArrayList<>();
+
+    public List<AppRoleDto> getAppRoleDtos() {
+        return appRoleDtos;
+    }
+
+    public void setAppRoleDtos(final List<AppRoleDto> appRoleDtos) {
+        this.appRoleDtos = appRoleDtos;
+    }
 
     public Long getId() {
         return id;

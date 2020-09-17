@@ -1,5 +1,6 @@
 /home/brichet/IdeaProjects/api-library/webapp/src/main/java/com/api/library/controller/EmpruntController.java
+/home/brichet/IdeaProjects/api-library/webapp/src/main/java/com/api/library/security/SecurityConfig.java
 /home/brichet/IdeaProjects/api-library/webapp/src/main/java/com/api/library/controller/BookController.java
 /home/brichet/IdeaProjects/api-library/webapp/src/main/java/com/api/library/App.java
+/home/brichet/IdeaProjects/api-library/webapp/src/main/java/com/api/library/controller/CustomerController.java
 /home/brichet/IdeaProjects/api-library/webapp/src/main/java/com/api/library/controller/CopyController.java
-/home/brichet/IdeaProjects/api-library/webapp/src/main/java/com/api/library/controller/UserController.java

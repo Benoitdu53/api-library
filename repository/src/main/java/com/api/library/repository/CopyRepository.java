@@ -1,10 +1,9 @@
 package com.api.library.repository;
 
-import com.api.library.model.Emprunt;
+import com.api.library.model.Copy;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EmpruntDao extends JpaRepository<Emprunt,Long> {
-
+public interface CopyRepository extends JpaRepository<Copy, Long> {
 }

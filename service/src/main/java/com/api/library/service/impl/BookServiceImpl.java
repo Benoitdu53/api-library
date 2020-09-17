@@ -1,9 +1,7 @@
 package com.api.library.service.impl;
 
-import com.api.library.dto.BookDto;
-import com.api.library.mapper.BookMapper;
 import com.api.library.model.Book;
-import com.api.library.repository.BookDao;
+import com.api.library.repository.BookRepository;
 import com.api.library.service.contract.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +13,7 @@ public class BookServiceImpl implements BookService {
 
     // ----------------- Injections des dépendances ----------------- //
     @Autowired
-    private BookDao bookDao;
+    private BookRepository bookRepository;
 
     // -----------------------------------------------------  //
 
@@ -25,7 +23,7 @@ public class BookServiceImpl implements BookService {
      */
     @Override
     public List<Book> getAllBooks() {
-        return bookDao.getAllBooks();
+        return bookRepository.getAllBooks();
     }
 
     /**
@@ -55,7 +53,7 @@ public class BookServiceImpl implements BookService {
      */
     @Override
     public List<Book> getBookByCategorie(String categorie) {
-        return bookDao.getBookByCategorie(categorie);
+        return bookRepository.getBookByCategorie(categorie);
     }
 
     /**
@@ -67,7 +65,7 @@ public class BookServiceImpl implements BookService {
     public List<Book> getBookBySearch(String saisie) {
         saisie = saisie.replaceAll("\\s","");
         saisie = saisie+"%";
-        return bookDao.getBookBySearch(saisie);
+        return bookRepository.getBookBySearch(saisie);
     }
 
 }

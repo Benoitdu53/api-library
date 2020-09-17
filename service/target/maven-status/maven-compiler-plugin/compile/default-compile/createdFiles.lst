@@ -1,9 +1,11 @@
 com/api/library/service/contract/BookService.class
 com/api/library/service/impl/BookServiceImpl.class
 com/api/library/service/impl/CopyServiceImpl.class
-com/api/library/service/contract/UserService.class
-com/api/library/service/impl/UserServiceImpl.class
+com/api/library/service/impl/RoleServiceImpl.class
 com/api/library/service/contract/EmpruntService.class
+com/api/library/service/impl/CustomerServiceImpl.class
+com/api/library/service/contract/CustomerService.class
 com/api/library/service/impl/EmpruntServiceImpl.class
+com/api/library/service/contract/RoleService.class
 com/api/library/service/contract/CopyService.class
 com/api/library/App.class

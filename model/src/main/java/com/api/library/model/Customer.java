@@ -3,11 +3,12 @@ package com.api.library.model;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 @Entity
-@Table(name = "user")
-public class User implements Serializable {
+@Table(name = "customer")
+public class Customer implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,12 +36,15 @@ public class User implements Serializable {
     @Column(name = "password")
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Collection<AppRole> roles = new ArrayList<>();
+
+    @OneToMany(mappedBy = "customer")
     private List<Emprunt> empruntList = new ArrayList<>();
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Customer{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -49,8 +53,17 @@ public class User implements Serializable {
                 ", city='" + city + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", roles=" + roles +
                 ", empruntList=" + empruntList +
                 '}';
+    }
+
+    public Collection<AppRole> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(final Collection<AppRole> roles) {
+        this.roles = roles;
     }
 
     public Long getId() {
