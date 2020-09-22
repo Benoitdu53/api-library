@@ -1,5 +1,6 @@
 package com.api.library.service.contract;
 
+import com.api.library.dto.BookDto;
 import com.api.library.model.Book;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public interface BookService {
      * @param id du livre
      * @return le livre selon l'id
      */
-    Book getBookById(Long id);
+    BookDto getBookById(Long id);
 
     /**
      *

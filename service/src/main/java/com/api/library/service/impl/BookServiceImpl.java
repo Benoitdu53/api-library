@@ -1,5 +1,7 @@
 package com.api.library.service.impl;
 
+import com.api.library.dto.BookDto;
+import com.api.library.mapper.BookMapper;
 import com.api.library.model.Book;
 import com.api.library.repository.BookRepository;
 import com.api.library.service.contract.BookService;
@@ -32,8 +34,8 @@ public class BookServiceImpl implements BookService {
      * @return la liste des books par id
      */
     @Override
-    public Book getBookById(final Long id) {
-        return null;
+    public BookDto getBookById(final Long id) {
+        return BookMapper.INSTANCE.bookToBookDto(bookRepository.getBookById(id));
     }
 
     /**

@@ -34,11 +34,24 @@ public class BookController {
         return BookMapper.INSTANCE.map(books);
     }
 
+    /**
+     * Récupère les books selon la catégorie
+     * @param saisie
+     * @return
+     */
     @PostMapping(value = "books/search")
     public List<BookDto> displayBookBySearch(@RequestParam(name = "saisie")String saisie){
 
         List<Book> books = bookService.getBookBySearch(saisie);
 
         return BookMapper.INSTANCE.map(books);
+    }
+
+    @GetMapping(value = "book/{idBook}")
+    public BookDto getBookById(@PathVariable("idBook") Long id){
+
+        BookDto bookDto = bookService.getBookById(id);
+
+        return bookDto;
     }
 }
