@@ -1,5 +1,7 @@
 package com.api.library.service.impl;
 
+import com.api.library.dto.EmpruntDto;
+import com.api.library.mapper.EmpruntMapper;
 import com.api.library.model.Emprunt;
 import com.api.library.repository.EmpruntRepository;
 import com.api.library.service.contract.EmpruntService;
@@ -17,10 +19,17 @@ public class EmpruntServiceImpl implements EmpruntService {
 
     // -----------------------------------------------------  //
 
-
+    /**
+     * Récupère les prêts de l'utilisateur selon son id
+     * @param id
+     * @return
+     */
     @Override
-    public List<Emprunt> getEmpruntById(final Long id) {
-        return null;
+    public List<EmpruntDto> getEmpruntByIdCustomer(final Long id) {
+
+        List<Emprunt> emprunts = empruntRepository.getEmpruntByIdCustomer(id);
+
+        return EmpruntMapper.INSTANCE.map(emprunts);
     }
 
     @Override

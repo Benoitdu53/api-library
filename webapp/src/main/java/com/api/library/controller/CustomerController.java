@@ -1,8 +1,8 @@
 package com.api.library.controller;
 
+import com.api.library.dto.AuthenticationDto;
 import com.api.library.dto.CustomerDto;
 import com.api.library.service.contract.CustomerService;
-import com.api.library.service.contract.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,15 +13,10 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @Autowired
-    private RoleService roleService;
-
     // -----------------------------------------------------  //
 
     @PostMapping("login")
     public CustomerDto login(@RequestBody CustomerDto customerDto){
-
-
 
         return customerDto;
     }
@@ -31,7 +26,7 @@ public class CustomerController {
      * @param email
      * @return l'utilisateur si il existe sinon null
      */
-    @GetMapping("user")
+    @PostMapping("user")
     public CustomerDto getCustomerByEmail(@RequestBody String email){
 
         CustomerDto customerDto = customerService.findCustomerByEmail(email);
@@ -47,8 +42,19 @@ public class CustomerController {
     @PostMapping("users")
     public CustomerDto createCustomer(@RequestBody CustomerDto customerDto){
 
-        roleService.addRoleToCustomer(customerDto, "user");
-
         return customerService.saveCustomer(customerDto);
+    }
+
+    /**
+     * Validation du login
+     * @param authenticationDto
+     * @return
+     */
+    @PostMapping("validationAuthencation")
+    public CustomerDto validationAuthentication(@RequestBody AuthenticationDto authenticationDto){
+
+        CustomerDto customerDto =customerService.validationAuthentication(authenticationDto);
+
+        return customerDto ;
     }
 }

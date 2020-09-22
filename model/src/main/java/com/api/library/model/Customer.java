@@ -36,9 +36,6 @@ public class Customer implements Serializable {
     @Column(name = "password")
     private String password;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    private Collection<AppRole> roles = new ArrayList<>();
-
     @OneToMany(mappedBy = "customer")
     private List<Emprunt> empruntList = new ArrayList<>();
 
@@ -53,17 +50,8 @@ public class Customer implements Serializable {
                 ", city='" + city + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", roles=" + roles +
                 ", empruntList=" + empruntList +
                 '}';
-    }
-
-    public Collection<AppRole> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(final Collection<AppRole> roles) {
-        this.roles = roles;
     }
 
     public Long getId() {

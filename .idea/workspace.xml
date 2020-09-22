@@ -5,26 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38a351d2-b8a0-4bca-817d-5fd198804d6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/JWTAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/JWTAuthorizationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/SecurityConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/dto/AuthenticationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/mapper/EmpruntMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/EmpruntMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/api/library/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/api/library/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/EmpruntRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/api/library/repository/EmpruntRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/EmpruntService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/EmpruntService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/RoleService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/EmpruntServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/EmpruntServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/RoleServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/contract/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/api/library/service/contract/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/contract/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/api/library/service/contract/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/contract/RoleService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/CustomerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/RoleServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/EmpruntController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/EmpruntController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/JWTAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/JWTAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/JWTAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/JWTAuthorizationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/SecurityConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/security/SecurityConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/BookController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/classes/com/api/library/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/security/JWTAuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/security/SecurityConfig.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -122,13 +131,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -308,7 +319,12 @@
       <workItem from="1600121496274" duration="98000" />
       <workItem from="1600194152063" duration="4203000" />
       <workItem from="1600326007963" duration="10077000" />
-      <workItem from="1600345934867" duration="7883000" />
+      <workItem from="1600345934867" duration="7918000" />
+      <workItem from="1600500478958" duration="70000" />
+      <workItem from="1600508505372" duration="1894000" />
+      <workItem from="1600522980779" duration="3203000" />
+      <workItem from="1600754870494" duration="4505000" />
+      <workItem from="1600761810625" duration="3019000" />
     </task>
     <servers />
   </component>
@@ -340,10 +356,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="418" y="164" width="894" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1599594090365" />
-    <state x="768" y="193" width="565" height="710" key="#com.intellij.ide.util.MemberChooser" timestamp="1600352926428">
+    <state x="768" y="193" width="565" height="717" key="#com.intellij.ide.util.MemberChooser" timestamp="1600756540195">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="768" y="193" width="565" height="710" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600352926428" />
+    <state x="768" y="193" width="565" height="717" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600756540195" />
     <state x="541" y="430" width="837" height="158" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1599485891973">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -356,6 +372,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="635" y="17" width="630" height="992" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600335577697" />
+    <state x="693" y="255" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600525374099">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="693" y="255" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600525374099" />
     <state x="718" y="250" key="#xdebugger.evaluate" timestamp="1599917696247">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -369,25 +389,25 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2734" y="419" width="470" height="235" key="Github.ShareDialog/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599234476441" />
-    <state width="1874" height="198" key="GridCell.Tab.0.bottom" timestamp="1600349252661">
+    <state width="1874" height="198" key="GridCell.Tab.0.bottom" timestamp="1600767842389">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="198" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600349252661" />
+    <state width="1874" height="198" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600767842389" />
     <state width="1874" height="192" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600201934437" />
-    <state width="1874" height="198" key="GridCell.Tab.0.center" timestamp="1600349252661">
+    <state width="1874" height="198" key="GridCell.Tab.0.center" timestamp="1600767842389">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="198" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600349252661" />
+    <state width="1874" height="198" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600767842389" />
     <state width="1874" height="192" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600201934437" />
-    <state width="1874" height="198" key="GridCell.Tab.0.left" timestamp="1600349252661">
+    <state width="1874" height="198" key="GridCell.Tab.0.left" timestamp="1600767842389">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="198" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600349252661" />
+    <state width="1874" height="198" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600767842389" />
     <state width="1874" height="192" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600201934437" />
-    <state width="1874" height="198" key="GridCell.Tab.0.right" timestamp="1600349252661">
+    <state width="1874" height="198" key="GridCell.Tab.0.right" timestamp="1600767842389">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="198" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600349252661" />
+    <state width="1874" height="198" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600767842389" />
     <state width="1874" height="192" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1600201934437" />
     <state width="1874" height="324" key="GridCell.Tab.1.bottom" timestamp="1600088467103">
       <screen x="0" y="27" width="1920" height="985" />
@@ -441,10 +461,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2475" y="255" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599235024398" />
-    <state x="821" y="390" width="377" height="297" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600120465364">
+    <state x="821" y="390" width="377" height="297" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600525294057">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="821" y="390" width="377" height="297" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600120465364" />
+    <state x="821" y="390" width="377" height="297" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600525294057" />
     <state x="2741" y="398" width="367" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599751264105" />
     <state x="713" y="323" width="484" height="400" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1600330254735">
       <screen x="0" y="27" width="1920" height="985" />
@@ -475,15 +495,15 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="739" y="263" width="432" height="492" key="refactoring.ChangeSignatureDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1599915820259" />
-    <state x="624" y="241" width="672" height="618" key="run.anything.popup" timestamp="1599487177956">
+    <state x="624" y="241" width="672" height="618" key="run.anything.popup" timestamp="1600523960636">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="624" y="241" width="672" height="618" key="run.anything.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1599487177956" />
+    <state x="624" y="241" width="672" height="618" key="run.anything.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600523960636" />
     <state x="2544" y="235" width="672" height="677" key="run.anything.popup/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599233443346" />
-    <state x="623" y="222" width="672" height="678" key="search.everywhere.popup" timestamp="1600347219345">
+    <state x="623" y="222" width="672" height="678" key="search.everywhere.popup" timestamp="1600767709770">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="623" y="222" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600347219345" />
+    <state x="623" y="222" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600767709770" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

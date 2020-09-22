@@ -1,6 +1,7 @@
 package com.api.library.service.impl;
 
 import com.api.library.dto.AppRoleDto;
+import com.api.library.dto.AuthenticationDto;
 import com.api.library.dto.CustomerDto;
 import com.api.library.mapper.AppRoleMapper;
 import com.api.library.mapper.CustomerMapper;
@@ -10,6 +11,7 @@ import com.api.library.repository.CustomerRepository;
 import com.api.library.repository.RoleRepository;
 import com.api.library.service.contract.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -80,10 +82,23 @@ public class CustomerServiceImpl implements CustomerService {
         return CustomerMapper.INSTANCE.userToUserDto(customer);
     }
 
+    /**
+     *
+     * @param authenticationDto
+     * @return l'utilisation si validation ok
+     */
     @Override
-    public Customer authentification(final Customer customer) {
-        return null;
+    public CustomerDto validationAuthentication(final AuthenticationDto authenticationDto) {
+
+        CustomerDto customerDto = CustomerMapper.INSTANCE.userToUserDto(customerRepository.findByEmail(authenticationDto.getEmail()));
+        String loginPassword = authenticationDto.getPassword();
+        String password = customerDto.getPassword();
+
+        if (customerDto == null || !BCrypt.checkpw(loginPassword,password)){
+
+            return null;
+        }
+
+        return customerDto;
     }
-
-
 }
