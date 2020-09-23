@@ -11,7 +11,7 @@ public interface BookService {
      *
      * @return  La liste de tout les livres
      */
-    List<Book> getAllBooks();
+    List<BookDto> getAllBooks();
 
     /**
      *
@@ -31,13 +31,13 @@ public interface BookService {
      *
      * @return  les livres selon la catégorie
      */
-    List<Book> getBookByCategorie(String categorie);
+    List<BookDto> getBookByCategorie(String categorie);
 
     /**
      *
      * @param saisie
      * @return la listes des livres par rapport à la recherche
      */
-    List<Book> getBookBySearch(String saisie);
+    List<BookDto> getBookBySearch(String saisie);
 
 }

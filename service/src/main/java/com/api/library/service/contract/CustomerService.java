@@ -1,10 +1,7 @@
 package com.api.library.service.contract;
 
-import com.api.library.dto.AppRoleDto;
 import com.api.library.dto.AuthenticationDto;
 import com.api.library.dto.CustomerDto;
-import com.api.library.model.AppRole;
-import com.api.library.model.Customer;
 
 public interface CustomerService {
 

@@ -20,18 +20,12 @@ public class BookController {
 
     @GetMapping(value = "books")
     public List<BookDto> displayBooks(){
-
-        List<Book> books = bookService.getAllBooks();
-
-        return BookMapper.INSTANCE.map(books);
+        return bookService.getAllBooks();
     }
 
-    @GetMapping(value = "books/{categorie}")
-    public List<BookDto> displayBookByCategorie(@PathVariable("categorie") String categorie){
-
-        List<Book> books = bookService.getBookByCategorie(categorie);
-
-        return BookMapper.INSTANCE.map(books);
+    @PostMapping(value = "books/categorie")
+    public List<BookDto> displayBookByCategorie(@RequestParam(name = "categorie") String categorie){
+        return bookService.getBookByCategorie(categorie);
     }
 
     /**
@@ -41,10 +35,7 @@ public class BookController {
      */
     @PostMapping(value = "books/search")
     public List<BookDto> displayBookBySearch(@RequestParam(name = "saisie")String saisie){
-
-        List<Book> books = bookService.getBookBySearch(saisie);
-
-        return BookMapper.INSTANCE.map(books);
+        return bookService.getBookBySearch(saisie);
     }
 
     @GetMapping(value = "book/{idBook}")

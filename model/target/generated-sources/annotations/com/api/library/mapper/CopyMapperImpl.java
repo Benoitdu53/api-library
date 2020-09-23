@@ -4,14 +4,30 @@ import com.api.library.dto.CopyDto;
 import com.api.library.dto.LibraryDto;
 import com.api.library.model.Copy;
 import com.api.library.model.Library;
+import java.util.ArrayList;
+import java.util.List;
 import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-09-17T11:18:13+0200",
+    date = "2020-09-23T14:40:57+0200",
     comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 11.0.6 (Ubuntu)"
 )
 public class CopyMapperImpl implements CopyMapper {
+
+    @Override
+    public List<CopyDto> map(List<Copy> copies) {
+        if ( copies == null ) {
+            return null;
+        }
+
+        List<CopyDto> list = new ArrayList<CopyDto>( copies.size() );
+        for ( Copy copy : copies ) {
+            list.add( copyToCopyDto( copy ) );
+        }
+
+        return list;
+    }
 
     @Override
     public CopyDto copyToCopyDto(Copy copy) {
@@ -22,11 +38,27 @@ public class CopyMapperImpl implements CopyMapper {
         CopyDto copyDto = new CopyDto();
 
         copyDto.setId( copy.getId() );
-        copyDto.setNumber( copy.getNumber() );
         copyDto.setFormat( copy.getFormat() );
+        copyDto.setStatus( copy.getStatus() );
         copyDto.setLibrary( libraryToLibraryDto( copy.getLibrary() ) );
 
         return copyDto;
+    }
+
+    @Override
+    public Copy copyDtoToCopy(CopyDto copyDto) {
+        if ( copyDto == null ) {
+            return null;
+        }
+
+        Copy copy = new Copy();
+
+        copy.setStatus( copyDto.getStatus() );
+        copy.setId( copyDto.getId() );
+        copy.setFormat( copyDto.getFormat() );
+        copy.setLibrary( libraryDtoToLibrary( copyDto.getLibrary() ) );
+
+        return copy;
     }
 
     protected LibraryDto libraryToLibraryDto(Library library) {
@@ -43,5 +75,21 @@ public class CopyMapperImpl implements CopyMapper {
         libraryDto.setEmail( library.getEmail() );
 
         return libraryDto;
+    }
+
+    protected Library libraryDtoToLibrary(LibraryDto libraryDto) {
+        if ( libraryDto == null ) {
+            return null;
+        }
+
+        Library library = new Library();
+
+        library.setId( libraryDto.getId() );
+        library.setNom( libraryDto.getNom() );
+        library.setAdress( libraryDto.getAdress() );
+        library.setPhoneNum( libraryDto.getPhoneNum() );
+        library.setEmail( libraryDto.getEmail() );
+
+        return library;
     }
 }

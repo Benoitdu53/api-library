@@ -1,14 +1,10 @@
 package com.api.library.service.impl;
 
-import com.api.library.dto.AppRoleDto;
 import com.api.library.dto.AuthenticationDto;
 import com.api.library.dto.CustomerDto;
-import com.api.library.mapper.AppRoleMapper;
 import com.api.library.mapper.CustomerMapper;
-import com.api.library.model.AppRole;
 import com.api.library.model.Customer;
 import com.api.library.repository.CustomerRepository;
-import com.api.library.repository.RoleRepository;
 import com.api.library.service.contract.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
@@ -26,9 +22,6 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
-
-    @Autowired
-    private RoleRepository roleRepository;
 
     // -----------------------------------------------------  //
 

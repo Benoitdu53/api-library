@@ -11,11 +11,11 @@ public class Copy {
     @Column
     private Long id;
 
-    @Column(name = "number")
-    private int number;
-
     @Column(name = "format")
     private String format;
+
+    @Column(name = "status")
+    private String status;
 
     @ManyToOne
     @JoinColumn(name = "book_id")
@@ -29,11 +29,19 @@ public class Copy {
     public String toString() {
         return "Copy{" +
                 "id=" + id +
-                ", number=" + number +
                 ", format='" + format + '\'' +
+                ", status='" + status + '\'' +
                 ", book=" + book +
                 ", library=" + library +
                 '}';
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(final String status) {
+        this.status = status;
     }
 
     public Long getId() {
@@ -42,14 +50,6 @@ public class Copy {
 
     public void setId(final Long id) {
         this.id = id;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(final int number) {
-        this.number = number;
     }
 
     public String getFormat() {

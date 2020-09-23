@@ -14,16 +14,8 @@ public class CustomerDto {
     private String city;
     private String email;
     private String password;
-    private List<EmpruntDto> empruntDtoList = new ArrayList<>();
-    private List<AppRoleDto> appRoleDtos = new ArrayList<>();
+    private List<EmpruntDto> empruntList = new ArrayList<>();
 
-    public List<AppRoleDto> getAppRoleDtos() {
-        return appRoleDtos;
-    }
-
-    public void setAppRoleDtos(final List<AppRoleDto> appRoleDtos) {
-        this.appRoleDtos = appRoleDtos;
-    }
 
     public Long getId() {
         return id;
@@ -89,11 +81,11 @@ public class CustomerDto {
         this.password = password;
     }
 
-    public List<EmpruntDto> getEmpruntDtoList() {
-        return empruntDtoList;
+    public List<EmpruntDto> getEmpruntList() {
+        return empruntList;
     }
 
-    public void setEmpruntDtoList(final List<EmpruntDto> empruntDtoList) {
-        this.empruntDtoList = empruntDtoList;
+    public void setEmpruntList(final List<EmpruntDto> empruntList) {
+        this.empruntList = empruntList;
     }
 }

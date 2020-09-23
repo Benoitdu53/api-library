@@ -15,22 +15,6 @@ public class BookDto {
     private AuthorDto author;
     private List<CopyDto> copyList;
 
-    public AuthorDto getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(final AuthorDto author) {
-        this.author = author;
-    }
-
-    public CategorieDto getCategorie() {
-        return categorie;
-    }
-
-    public void setCategorie(final CategorieDto categorie) {
-        this.categorie = categorie;
-    }
-
     public Long getId() {
         return id;
     }
@@ -77,6 +61,22 @@ public class BookDto {
 
     public void setCover(final String cover) {
         this.cover = cover;
+    }
+
+    public CategorieDto getCategorie() {
+        return categorie;
+    }
+
+    public void setCategorie(final CategorieDto categorie) {
+        this.categorie = categorie;
+    }
+
+    public AuthorDto getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(final AuthorDto author) {
+        this.author = author;
     }
 
     public List<CopyDto> getCopyList() {

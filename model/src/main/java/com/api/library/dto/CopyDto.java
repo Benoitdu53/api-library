@@ -8,9 +8,9 @@ import java.util.List;
 public class CopyDto {
 
     private Long id;
-    private int number;
     private String format;
-    private List<Emprunt> empruntList = new ArrayList<>();
+    private String status;
+    private List<EmpruntDto> empruntList = new ArrayList<>();
     private LibraryDto library;
 
     public Long getId() {
@@ -21,14 +21,6 @@ public class CopyDto {
         this.id = id;
     }
 
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(final int number) {
-        this.number = number;
-    }
-
     public String getFormat() {
         return format;
     }
@@ -37,11 +29,19 @@ public class CopyDto {
         this.format = format;
     }
 
-    public List<Emprunt> getEmpruntList() {
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(final String status) {
+        this.status = status;
+    }
+
+    public List<EmpruntDto> getEmpruntList() {
         return empruntList;
     }
 
-    public void setEmpruntList(final List<Emprunt> empruntList) {
+    public void setEmpruntList(final List<EmpruntDto> empruntList) {
         this.empruntList = empruntList;
     }
 

@@ -57,7 +57,6 @@ create table copy
 (
     id         int auto_increment
         primary key,
-    number     int         not null,
     format     varchar(20) not null,
     book_id    int         not null,
     library_id int         not null,
@@ -80,12 +79,5 @@ create table emprunt
         foreign key (copy_id) references copy (id),
     constraint user_emprunt_fk
         foreign key (user_id) references customer (id)
-);
-
-create table role
-(
-    id        bigint auto_increment
-        primary key,
-    role_name varchar(255) null
 );
 

@@ -1,6 +1,5 @@
-com/api/library/controller/CopyController.class
-com/api/library/security/SecurityConfig.class
 com/api/library/controller/BookController.class
 com/api/library/controller/EmpruntController.class
 com/api/library/controller/CustomerController.class
 com/api/library/App.class
+com/api/library/controller/CopyController.class

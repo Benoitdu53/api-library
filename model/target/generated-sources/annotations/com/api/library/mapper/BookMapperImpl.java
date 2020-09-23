@@ -16,7 +16,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-09-17T11:18:13+0200",
+    date = "2020-09-23T14:40:57+0200",
     comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 11.0.6 (Ubuntu)"
 )
 public class BookMapperImpl implements BookMapper {
@@ -43,14 +43,14 @@ public class BookMapperImpl implements BookMapper {
 
         BookDto bookDto = new BookDto();
 
-        bookDto.setAuthor( authorToAuthorDto( book.getAuthor() ) );
-        bookDto.setCategorie( categorieToCategorieDto( book.getCategorie() ) );
         bookDto.setId( book.getId() );
         bookDto.setTitle( book.getTitle() );
         bookDto.setPubDate( book.getPubDate() );
         bookDto.setPage( book.getPage() );
         bookDto.setSynopsis( book.getSynopsis() );
         bookDto.setCover( book.getCover() );
+        bookDto.setCategorie( categorieToCategorieDto( book.getCategorie() ) );
+        bookDto.setAuthor( authorToAuthorDto( book.getAuthor() ) );
         bookDto.setCopyList( copyListToCopyDtoList( book.getCopyList() ) );
 
         return bookDto;
@@ -77,6 +77,19 @@ public class BookMapperImpl implements BookMapper {
         return book;
     }
 
+    protected CategorieDto categorieToCategorieDto(Categorie categorie) {
+        if ( categorie == null ) {
+            return null;
+        }
+
+        CategorieDto categorieDto = new CategorieDto();
+
+        categorieDto.setId( categorie.getId() );
+        categorieDto.setLabel( categorie.getLabel() );
+
+        return categorieDto;
+    }
+
     protected AuthorDto authorToAuthorDto(Author author) {
         if ( author == null ) {
             return null;
@@ -89,19 +102,6 @@ public class BookMapperImpl implements BookMapper {
         authorDto.setLastName( author.getLastName() );
 
         return authorDto;
-    }
-
-    protected CategorieDto categorieToCategorieDto(Categorie categorie) {
-        if ( categorie == null ) {
-            return null;
-        }
-
-        CategorieDto categorieDto = new CategorieDto();
-
-        categorieDto.setId( categorie.getId() );
-        categorieDto.setLabel( categorie.getLabel() );
-
-        return categorieDto;
     }
 
     protected LibraryDto libraryToLibraryDto(Library library) {
@@ -128,8 +128,8 @@ public class BookMapperImpl implements BookMapper {
         CopyDto copyDto = new CopyDto();
 
         copyDto.setId( copy.getId() );
-        copyDto.setNumber( copy.getNumber() );
         copyDto.setFormat( copy.getFormat() );
+        copyDto.setStatus( copy.getStatus() );
         copyDto.setLibrary( libraryToLibraryDto( copy.getLibrary() ) );
 
         return copyDto;
@@ -171,8 +171,8 @@ public class BookMapperImpl implements BookMapper {
 
         Copy copy = new Copy();
 
+        copy.setStatus( copyDto.getStatus() );
         copy.setId( copyDto.getId() );
-        copy.setNumber( copyDto.getNumber() );
         copy.setFormat( copyDto.getFormat() );
         copy.setLibrary( libraryDtoToLibrary( copyDto.getLibrary() ) );
 

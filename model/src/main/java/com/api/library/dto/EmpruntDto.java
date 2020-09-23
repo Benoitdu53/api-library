@@ -8,24 +8,8 @@ public class EmpruntDto {
     private Date empruntDate;
     private Date returnDate;
     private Boolean isExtended;
-    private CopyDto copyDto;
-    private CustomerDto customerDto;
-
-    public CustomerDto getUserDto() {
-        return customerDto;
-    }
-
-    public void setUserDto(final CustomerDto customerDto) {
-        this.customerDto = customerDto;
-    }
-
-    public CopyDto getCopyDto() {
-        return copyDto;
-    }
-
-    public void setCopyDto(final CopyDto copyDto) {
-        this.copyDto = copyDto;
-    }
+    private CopyDto copy;
+    private CustomerDto customer;
 
     public Long getId() {
         return id;
@@ -57,5 +41,21 @@ public class EmpruntDto {
 
     public void setExtended(final Boolean extended) {
         isExtended = extended;
+    }
+
+    public CopyDto getCopy() {
+        return copy;
+    }
+
+    public void setCopy(final CopyDto copy) {
+        this.copy = copy;
+    }
+
+    public CustomerDto getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(final CustomerDto customer) {
+        this.customer = customer;
     }
 }

@@ -24,8 +24,8 @@ public class BookServiceImpl implements BookService {
      * @return la liste des books
      */
     @Override
-    public List<Book> getAllBooks() {
-        return bookRepository.getAllBooks();
+    public List<BookDto> getAllBooks() {
+        return BookMapper.INSTANCE.map(bookRepository.getAllBooks());
     }
 
     /**
@@ -54,8 +54,11 @@ public class BookServiceImpl implements BookService {
      * @return la liste des books selon la catégorie
      */
     @Override
-    public List<Book> getBookByCategorie(String categorie) {
-        return bookRepository.getBookByCategorie(categorie);
+    public List<BookDto> getBookByCategorie(String categorie) {
+
+
+
+        return BookMapper.INSTANCE.map(bookRepository.getBookByCategorie(categorie));
     }
 
     /**
@@ -64,10 +67,11 @@ public class BookServiceImpl implements BookService {
      * @return la liste des books selon la saisie de recherche
      */
     @Override
-    public List<Book> getBookBySearch(String saisie) {
+    public List<BookDto> getBookBySearch(String saisie) {
         saisie = saisie.replaceAll("\\s","");
         saisie = saisie+"%";
-        return bookRepository.getBookBySearch(saisie);
+
+        return BookMapper.INSTANCE.map(bookRepository.getBookBySearch(saisie));
     }
 
 }
