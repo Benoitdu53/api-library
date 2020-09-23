@@ -33,7 +33,6 @@ public class Categorie implements Serializable {
         return "Categorie{" +
                 "id=" + id +
                 ", label='" + label + '\'' +
-                ", bookList=" + bookList +
                 '}';
     }
 

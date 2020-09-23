@@ -37,7 +37,6 @@ public class Library implements Serializable {
                 ", adress='" + adress + '\'' +
                 ", phoneNum='" + phoneNum + '\'' +
                 ", email='" + email + '\'' +
-                ", copyList=" + copyList +
                 '}';
     }
 

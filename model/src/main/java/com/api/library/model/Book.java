@@ -60,7 +60,6 @@ public class Book implements Serializable {
                 ", cover='" + cover + '\'' +
                 ", categorie=" + categorie +
                 ", author=" + author +
-                ", copyList=" + copyList +
                 '}';
     }
 

@@ -11,9 +11,9 @@ import java.util.List;
 @Repository
 public interface CopyRepository extends JpaRepository<Copy, Long> {
 
-    // Récupérer les exemplaires disponible
-    @Query("SELECT DISTINCT  c, COUNT(c.format) AS numberCopy FROM Copy c WHERE c.book.id = :id")
-    List<Copy> getCopyByIdBook(@Param("id") Long id);
+    // Récupérer les exemplaires disponible ( Number of Copy, format Name, Library Name
+    @Query("SELECT c.book, c.library, c.format, COUNT(c.id) AS numberCopy FROM Copy c WHERE c.book.id = :id GROUP BY c.book, c.library, c.format")
+    List<Object[]> getCopyByIdBook(@Param("id") Long id);
 
     // Récupère l'exemplaire selon l'id
     @Query("SELECT c FROM Copy c WHERE c.id = :idCopy")

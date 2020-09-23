@@ -10,7 +10,6 @@ public class CopyDto {
     private Long id;
     private String format;
     private String status;
-    private List<EmpruntDto> empruntList = new ArrayList<>();
     private LibraryDto library;
 
     public Long getId() {
@@ -35,14 +34,6 @@ public class CopyDto {
 
     public void setStatus(final String status) {
         this.status = status;
-    }
-
-    public List<EmpruntDto> getEmpruntList() {
-        return empruntList;
-    }
-
-    public void setEmpruntList(final List<EmpruntDto> empruntList) {
-        this.empruntList = empruntList;
     }
 
     public LibraryDto getLibrary() {

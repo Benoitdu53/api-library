@@ -1,7 +1,7 @@
 package com.api.library.controller;
 
+import com.api.library.dto.CopyByBookDto;
 import com.api.library.dto.CopyDto;
-import com.api.library.mapper.CopyMapper;
 import com.api.library.service.contract.CopyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +25,7 @@ public class CopyController {
      * @return
      */
     @GetMapping(value = "copies/{idBook}")
-    public List<CopyDto> displayCopyByIdBook(@PathVariable("idBook") Long id){
+    public List<CopyByBookDto> displayCopyByIdBook(@PathVariable("idBook") Long id){
         return copyService.getCopyByIdBook(id);
     }
 
