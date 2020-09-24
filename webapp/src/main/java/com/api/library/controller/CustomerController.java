@@ -53,7 +53,7 @@ public class CustomerController {
     @PostMapping("validationAuthencation")
     public CustomerDto validationAuthentication(@RequestBody AuthenticationDto authenticationDto){
 
-        CustomerDto customerDto =customerService.validationAuthentication(authenticationDto);
+        CustomerDto customerDto = customerService.validationAuthentication(authenticationDto);
 
         return customerDto ;
     }
