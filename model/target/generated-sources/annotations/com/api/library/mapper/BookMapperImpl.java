@@ -3,20 +3,16 @@ package com.api.library.mapper;
 import com.api.library.dto.AuthorDto;
 import com.api.library.dto.BookDto;
 import com.api.library.dto.CategorieDto;
-import com.api.library.dto.CopyDto;
-import com.api.library.dto.LibraryDto;
 import com.api.library.model.Author;
 import com.api.library.model.Book;
 import com.api.library.model.Categorie;
-import com.api.library.model.Copy;
-import com.api.library.model.Library;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-09-23T14:40:57+0200",
+    date = "2020-09-26T18:17:52+0200",
     comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 11.0.6 (Ubuntu)"
 )
 public class BookMapperImpl implements BookMapper {
@@ -51,7 +47,6 @@ public class BookMapperImpl implements BookMapper {
         bookDto.setCover( book.getCover() );
         bookDto.setCategorie( categorieToCategorieDto( book.getCategorie() ) );
         bookDto.setAuthor( authorToAuthorDto( book.getAuthor() ) );
-        bookDto.setCopyList( copyListToCopyDtoList( book.getCopyList() ) );
 
         return bookDto;
     }
@@ -64,7 +59,6 @@ public class BookMapperImpl implements BookMapper {
 
         Book book = new Book();
 
-        book.setCopyList( copyDtoListToCopyList( bookDto.getCopyList() ) );
         book.setAuthor( authorDtoToAuthor( bookDto.getAuthor() ) );
         book.setCategorie( categorieDtoToCategorie( bookDto.getCategorie() ) );
         book.setId( bookDto.getId() );
@@ -102,94 +96,6 @@ public class BookMapperImpl implements BookMapper {
         authorDto.setLastName( author.getLastName() );
 
         return authorDto;
-    }
-
-    protected LibraryDto libraryToLibraryDto(Library library) {
-        if ( library == null ) {
-            return null;
-        }
-
-        LibraryDto libraryDto = new LibraryDto();
-
-        libraryDto.setId( library.getId() );
-        libraryDto.setNom( library.getNom() );
-        libraryDto.setAdress( library.getAdress() );
-        libraryDto.setPhoneNum( library.getPhoneNum() );
-        libraryDto.setEmail( library.getEmail() );
-
-        return libraryDto;
-    }
-
-    protected CopyDto copyToCopyDto(Copy copy) {
-        if ( copy == null ) {
-            return null;
-        }
-
-        CopyDto copyDto = new CopyDto();
-
-        copyDto.setId( copy.getId() );
-        copyDto.setFormat( copy.getFormat() );
-        copyDto.setStatus( copy.getStatus() );
-        copyDto.setLibrary( libraryToLibraryDto( copy.getLibrary() ) );
-
-        return copyDto;
-    }
-
-    protected List<CopyDto> copyListToCopyDtoList(List<Copy> list) {
-        if ( list == null ) {
-            return null;
-        }
-
-        List<CopyDto> list1 = new ArrayList<CopyDto>( list.size() );
-        for ( Copy copy : list ) {
-            list1.add( copyToCopyDto( copy ) );
-        }
-
-        return list1;
-    }
-
-    protected Library libraryDtoToLibrary(LibraryDto libraryDto) {
-        if ( libraryDto == null ) {
-            return null;
-        }
-
-        Library library = new Library();
-
-        library.setId( libraryDto.getId() );
-        library.setNom( libraryDto.getNom() );
-        library.setAdress( libraryDto.getAdress() );
-        library.setPhoneNum( libraryDto.getPhoneNum() );
-        library.setEmail( libraryDto.getEmail() );
-
-        return library;
-    }
-
-    protected Copy copyDtoToCopy(CopyDto copyDto) {
-        if ( copyDto == null ) {
-            return null;
-        }
-
-        Copy copy = new Copy();
-
-        copy.setStatus( copyDto.getStatus() );
-        copy.setId( copyDto.getId() );
-        copy.setFormat( copyDto.getFormat() );
-        copy.setLibrary( libraryDtoToLibrary( copyDto.getLibrary() ) );
-
-        return copy;
-    }
-
-    protected List<Copy> copyDtoListToCopyList(List<CopyDto> list) {
-        if ( list == null ) {
-            return null;
-        }
-
-        List<Copy> list1 = new ArrayList<Copy>( list.size() );
-        for ( CopyDto copyDto : list ) {
-            list1.add( copyDtoToCopy( copyDto ) );
-        }
-
-        return list1;
     }
 
     protected Author authorDtoToAuthor(AuthorDto authorDto) {

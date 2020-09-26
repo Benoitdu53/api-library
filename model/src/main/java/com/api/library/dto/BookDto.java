@@ -1,5 +1,7 @@
 package com.api.library.dto;
 
+import com.api.library.model.Book;
+
 import java.util.Date;
 import java.util.List;
 
@@ -13,7 +15,6 @@ public class BookDto {
     private String cover;
     private CategorieDto categorie;
     private AuthorDto author;
-    private List<CopyDto> copyList;
 
     public Long getId() {
         return id;
@@ -79,11 +80,4 @@ public class BookDto {
         this.author = author;
     }
 
-    public List<CopyDto> getCopyList() {
-        return copyList;
-    }
-
-    public void setCopyList(final List<CopyDto> copyList) {
-        this.copyList = copyList;
-    }
 }

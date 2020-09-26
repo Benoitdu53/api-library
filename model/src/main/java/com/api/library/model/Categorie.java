@@ -17,17 +17,6 @@ public class Categorie implements Serializable {
     @Column
     private String label;
 
-    @OneToMany(mappedBy = "categorie")
-    private List<Book> bookList = new ArrayList<>();
-
-    public List<Book> getBookList() {
-        return bookList;
-    }
-
-    public void setBookList(final List<Book> bookList) {
-        this.bookList = bookList;
-    }
-
     @Override
     public String toString() {
         return "Categorie{" +

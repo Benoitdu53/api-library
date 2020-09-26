@@ -50,7 +50,7 @@ public class CustomerController {
      * @param authenticationDto
      * @return
      */
-    @PostMapping("validationAuthencation")
+    @PostMapping("validationAuthentication")
     public CustomerDto validationAuthentication(@RequestBody AuthenticationDto authenticationDto){
 
         CustomerDto customerDto = customerService.validationAuthentication(authenticationDto);

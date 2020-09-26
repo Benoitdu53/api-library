@@ -14,7 +14,7 @@ public class CustomerDto {
     private String city;
     private String email;
     private String password;
-    private List<EmpruntDto> empruntList = new ArrayList<>();
+
 
 
     public Long getId() {
@@ -81,11 +81,5 @@ public class CustomerDto {
         this.password = password;
     }
 
-    public List<EmpruntDto> getEmpruntList() {
-        return empruntList;
-    }
 
-    public void setEmpruntList(final List<EmpruntDto> empruntList) {
-        this.empruntList = empruntList;
-    }
 }

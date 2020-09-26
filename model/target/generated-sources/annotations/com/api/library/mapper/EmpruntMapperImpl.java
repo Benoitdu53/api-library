@@ -1,9 +1,11 @@
 package com.api.library.mapper;
 
 import com.api.library.dto.CopyDto;
+import com.api.library.dto.CustomerDto;
 import com.api.library.dto.EmpruntDto;
 import com.api.library.dto.LibraryDto;
 import com.api.library.model.Copy;
+import com.api.library.model.Customer;
 import com.api.library.model.Emprunt;
 import com.api.library.model.Library;
 import java.util.ArrayList;
@@ -12,7 +14,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-09-23T14:40:57+0200",
+    date = "2020-09-26T18:17:53+0200",
     comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 11.0.6 (Ubuntu)"
 )
 public class EmpruntMapperImpl implements EmpruntMapper {
@@ -44,6 +46,7 @@ public class EmpruntMapperImpl implements EmpruntMapper {
         empruntDto.setReturnDate( emprunt.getReturnDate() );
         empruntDto.setExtended( emprunt.getExtended() );
         empruntDto.setCopy( copyToCopyDto( emprunt.getCopy() ) );
+        empruntDto.setCustomer( customerToCustomerDto( emprunt.getCustomer() ) );
 
         return empruntDto;
     }
@@ -56,6 +59,7 @@ public class EmpruntMapperImpl implements EmpruntMapper {
 
         Emprunt emprunt = new Emprunt();
 
+        emprunt.setCustomer( customerDtoToCustomer( empruntDto.getCustomer() ) );
         emprunt.setId( empruntDto.getId() );
         emprunt.setEmpruntDate( empruntDto.getEmpruntDate() );
         emprunt.setReturnDate( empruntDto.getReturnDate() );
@@ -88,12 +92,51 @@ public class EmpruntMapperImpl implements EmpruntMapper {
 
         CopyDto copyDto = new CopyDto();
 
+        copyDto.setBook( copy.getBook() );
         copyDto.setId( copy.getId() );
         copyDto.setFormat( copy.getFormat() );
         copyDto.setStatus( copy.getStatus() );
         copyDto.setLibrary( libraryToLibraryDto( copy.getLibrary() ) );
 
         return copyDto;
+    }
+
+    protected CustomerDto customerToCustomerDto(Customer customer) {
+        if ( customer == null ) {
+            return null;
+        }
+
+        CustomerDto customerDto = new CustomerDto();
+
+        customerDto.setId( customer.getId() );
+        customerDto.setFirstName( customer.getFirstName() );
+        customerDto.setLastName( customer.getLastName() );
+        customerDto.setAdress( customer.getAdress() );
+        customerDto.setPostalCode( customer.getPostalCode() );
+        customerDto.setCity( customer.getCity() );
+        customerDto.setEmail( customer.getEmail() );
+        customerDto.setPassword( customer.getPassword() );
+
+        return customerDto;
+    }
+
+    protected Customer customerDtoToCustomer(CustomerDto customerDto) {
+        if ( customerDto == null ) {
+            return null;
+        }
+
+        Customer customer = new Customer();
+
+        customer.setId( customerDto.getId() );
+        customer.setFirstName( customerDto.getFirstName() );
+        customer.setLastName( customerDto.getLastName() );
+        customer.setAdress( customerDto.getAdress() );
+        customer.setPostalCode( customerDto.getPostalCode() );
+        customer.setCity( customerDto.getCity() );
+        customer.setEmail( customerDto.getEmail() );
+        customer.setPassword( customerDto.getPassword() );
+
+        return customer;
     }
 
     protected Library libraryDtoToLibrary(LibraryDto libraryDto) {
@@ -123,6 +166,7 @@ public class EmpruntMapperImpl implements EmpruntMapper {
         copy.setId( copyDto.getId() );
         copy.setFormat( copyDto.getFormat() );
         copy.setLibrary( libraryDtoToLibrary( copyDto.getLibrary() ) );
+        copy.setBook( copyDto.getBook() );
 
         return copy;
     }

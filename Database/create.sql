@@ -73,11 +73,11 @@ create table emprunt
     emprunt_date date                 not null,
     return_date  date                 not null,
     is_extended  tinyint(1) default 0 not null,
-    user_id      int                  not null,
+    customer_id      int                  not null,
     copy_id      int                  not null,
     constraint copy_emprunt_fk
         foreign key (copy_id) references copy (id),
-    constraint user_emprunt_fk
-        foreign key (user_id) references customer (id)
+    constraint customer._emprunt_fk
+        foreign key (customer_id) references customer (id)
 );
 

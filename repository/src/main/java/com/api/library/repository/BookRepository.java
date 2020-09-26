@@ -26,4 +26,5 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     //Récupère le livre selon l'id
     @Query("SELECT b FROM Book b WHERE b.id = :idBook")
     Book getBookById(@Param("idBook")Long idBook);
+
 }

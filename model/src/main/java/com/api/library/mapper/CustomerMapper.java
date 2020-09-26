@@ -10,7 +10,7 @@ public interface CustomerMapper {
 
     CustomerMapper INSTANCE = Mappers.getMapper(CustomerMapper.class);
 
-    CustomerDto userToUserDto(Customer customer);
-    Customer userDtoToUser(CustomerDto customerDto);
+    CustomerDto customerToCustomerDto(Customer customer);
+    Customer customerDtoToCustomer(CustomerDto customerDto);
 
 }

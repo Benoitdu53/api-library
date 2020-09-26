@@ -36,9 +36,6 @@ public class Customer implements Serializable {
     @Column(name = "password")
     private String password;
 
-    @OneToMany(mappedBy = "customer")
-    private List<Emprunt> empruntList = new ArrayList<>();
-
     @Override
     public String toString() {
         return "Customer{" +
@@ -50,7 +47,6 @@ public class Customer implements Serializable {
                 ", city='" + city + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", empruntList=" + empruntList +
                 '}';
     }
 
@@ -118,11 +114,4 @@ public class Customer implements Serializable {
         this.password = password;
     }
 
-    public List<Emprunt> getEmpruntList() {
-        return empruntList;
-    }
-
-    public void setEmpruntList(final List<Emprunt> empruntList) {
-        this.empruntList = empruntList;
-    }
 }

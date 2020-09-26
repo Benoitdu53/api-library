@@ -12,6 +12,7 @@
 /home/brichet/IdeaProjects/api-library/model/src/main/java/com/api/library/model/Customer.java
 /home/brichet/IdeaProjects/api-library/model/src/main/java/com/api/library/dto/EmpruntDto.java
 /home/brichet/IdeaProjects/api-library/model/src/main/java/com/api/library/mapper/CopyMapper.java
+/home/brichet/IdeaProjects/api-library/model/src/main/java/com/api/library/dto/CopyByBookDto.java
 /home/brichet/IdeaProjects/api-library/model/src/main/java/com/api/library/dto/BookDto.java
 /home/brichet/IdeaProjects/api-library/model/src/main/java/com/api/library/model/Categorie.java
 /home/brichet/IdeaProjects/api-library/model/src/main/java/com/api/library/dto/CategorieDto.java

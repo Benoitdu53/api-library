@@ -10,7 +10,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-09-23T14:40:57+0200",
+    date = "2020-09-26T18:17:52+0200",
     comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 11.0.6 (Ubuntu)"
 )
 public class CopyMapperImpl implements CopyMapper {
@@ -37,6 +37,7 @@ public class CopyMapperImpl implements CopyMapper {
 
         CopyDto copyDto = new CopyDto();
 
+        copyDto.setBook( copy.getBook() );
         copyDto.setId( copy.getId() );
         copyDto.setFormat( copy.getFormat() );
         copyDto.setStatus( copy.getStatus() );
@@ -57,6 +58,7 @@ public class CopyMapperImpl implements CopyMapper {
         copy.setId( copyDto.getId() );
         copy.setFormat( copyDto.getFormat() );
         copy.setLibrary( libraryDtoToLibrary( copyDto.getLibrary() ) );
+        copy.setBook( copyDto.getBook() );
 
         return copy;
     }

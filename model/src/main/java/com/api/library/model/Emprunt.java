@@ -1,6 +1,8 @@
 package com.api.library.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -28,7 +30,7 @@ public class Emprunt implements Serializable {
     private Copy copy;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "customer_id")
     private Customer customer;
 
     @Override
@@ -39,8 +41,18 @@ public class Emprunt implements Serializable {
                 ", returnDate=" + returnDate +
                 ", isExtended=" + isExtended +
                 ", copy=" + copy +
-                ", user=" + customer +
+                ", customer=" + customer +
                 '}';
+    }
+
+
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(final Customer customer) {
+        this.customer = customer;
     }
 
     public Long getId() {
@@ -83,11 +95,4 @@ public class Emprunt implements Serializable {
         this.copy = copy;
     }
 
-    public Customer getUser() {
-        return customer;
-    }
-
-    public void setUser(final Customer customer) {
-        this.customer = customer;
-    }
 }

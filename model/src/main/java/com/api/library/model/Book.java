@@ -42,9 +42,6 @@ public class Book implements Serializable {
     @JoinColumn(name = "author_id")
     private Author author;
 
-    @OneToMany(mappedBy = "book")
-    List<Copy> copyList = new ArrayList<>();
-
     public Book() {
 
     }
@@ -61,14 +58,6 @@ public class Book implements Serializable {
                 ", categorie=" + categorie +
                 ", author=" + author +
                 '}';
-    }
-
-    public List<Copy> getCopyList() {
-        return copyList;
-    }
-
-    public void setCopyList(final List<Copy> copyList) {
-        this.copyList = copyList;
     }
 
     public Author getAuthor() {

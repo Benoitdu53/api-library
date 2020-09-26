@@ -45,10 +45,10 @@ public class CustomerServiceImpl implements CustomerService {
         String hashPw=bCryptPasswordEncoder.encode(customerDto.getPassword());
         customerDto.setPassword(hashPw);
 
-        Customer customer = CustomerMapper.INSTANCE.userDtoToUser(customerDto);
+        Customer customer = CustomerMapper.INSTANCE.customerDtoToCustomer(customerDto);
         customer = customerRepository.save(customer);
 
-        return CustomerMapper.INSTANCE.userToUserDto(customer);
+        return CustomerMapper.INSTANCE.customerToCustomerDto(customer);
     }
 
     /**
@@ -60,7 +60,7 @@ public class CustomerServiceImpl implements CustomerService {
     public CustomerDto findCustomerByEmail(final String email) {
         Customer customer = customerRepository.findByEmail(email);
 
-        return CustomerMapper.INSTANCE.userToUserDto(customer);
+        return CustomerMapper.INSTANCE.customerToCustomerDto(customer);
     }
 
 
@@ -69,10 +69,10 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public CustomerDto createUser(final CustomerDto customerDto) {
 
-        Customer customer = CustomerMapper.INSTANCE.userDtoToUser(customerDto);
+        Customer customer = CustomerMapper.INSTANCE.customerDtoToCustomer(customerDto);
         customer = customerRepository.save(customer);
 
-        return CustomerMapper.INSTANCE.userToUserDto(customer);
+        return CustomerMapper.INSTANCE.customerToCustomerDto(customer);
     }
 
     /**
@@ -83,7 +83,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public CustomerDto validationAuthentication(final AuthenticationDto authenticationDto) {
 
-        CustomerDto customerDto = CustomerMapper.INSTANCE.userToUserDto(customerRepository.findByEmail(authenticationDto.getEmail()));
+        CustomerDto customerDto = CustomerMapper.INSTANCE.customerToCustomerDto(customerRepository.findByEmail(authenticationDto.getEmail()));
         String loginPassword = authenticationDto.getPassword();
         String password = customerDto.getPassword();
 

@@ -19,16 +19,12 @@ public class Author {
     @Column(name = "last_name")
     private String lastName;
 
-    @OneToMany(mappedBy = "author")
-    private List<Book> bookList = new ArrayList<>();
-
     @Override
     public String toString() {
         return "Author{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", bookList=" + bookList +
                 '}';
     }
 
@@ -56,11 +52,4 @@ public class Author {
         this.lastName = lastName;
     }
 
-    public List<Book> getBookList() {
-        return bookList;
-    }
-
-    public void setBookList(final List<Book> bookList) {
-        this.bookList = bookList;
-    }
 }

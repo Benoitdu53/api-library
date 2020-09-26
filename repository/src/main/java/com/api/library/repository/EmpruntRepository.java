@@ -14,5 +14,5 @@ public interface EmpruntRepository extends JpaRepository<Emprunt,Long> {
     // Prêt de l'utilisateur en session ( exemplaire, le nom du livre et l'auteur )
     @Query("SELECT e FROM Emprunt e WHERE e.customer.id = :id")
     List<Emprunt> getEmpruntByIdCustomer(@Param("id") Long id);
-
+    
 }
