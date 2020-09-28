@@ -15,7 +15,7 @@ public interface EmpruntService {
     void updateEmprunt(Long id);
 
     // Ajoute un emprunt
-    EmpruntDto addEmprunt(String format, String nameLibrary, CustomerDto customerDto );
+    EmpruntDto addEmprunt(Long idBook, String format, String nameLibrary, CustomerDto customerDto );
 
     // Supprime un emprunt
     void deleteEmprunt(Long id);

@@ -22,8 +22,10 @@ public interface CopyRepository extends JpaRepository<Copy, Long> {
     Copy getCopyById(@Param("idCopy") Long idCopy);
 
     //Récupère un exemplaire selon le format et le nom de la library
-    @Query("SELECT c FROM Copy c WHERE (c.format Like :format) AND (c.library.nom Like :nameLibrary)")
-    Copy findFirstByFormatAndAndLibrary_Nom(@Param("format") String format, @Param("nameLibrary") String nameLibrary);
+    @Query("SELECT c FROM Copy c WHERE (c.format Like :format) AND (c.library.nom Like :nameLibrary) AND (c.book.id = :idBook)")
+    Copy findFirstByFormatAndLibrary_Nom(@Param("format") String format,
+                                         @Param("nameLibrary") String nameLibrary,
+                                         @Param("idBook")Long idBook);
 
     // Update status en Indisponible
     @Transactional

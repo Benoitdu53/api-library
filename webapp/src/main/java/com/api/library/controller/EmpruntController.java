@@ -33,16 +33,19 @@ public class EmpruntController {
 
     /**
      * Ajoute un prêt
+     * @param idBook
+     * @param customerDto
      * @param format
      * @param nameLibrary
      * @return
      */
-    @PostMapping(value = "emprunt/add")
-    EmpruntDto createEmprunt(@RequestParam(name = "format") String format,
+    @PostMapping(value = "emprunt/add/{idBook}")
+    EmpruntDto createEmprunt(@PathVariable("idBook") Long idBook,
+                             @RequestParam(name = "format") String format,
                              @RequestParam(name = "nameLibrary") String nameLibrary,
                              CustomerDto customerDto){
 
-        return empruntService.addEmprunt(format, nameLibrary, customerDto);
+        return empruntService.addEmprunt(idBook, format, nameLibrary, customerDto);
     }
 
     /**
@@ -54,5 +57,14 @@ public class EmpruntController {
     void extendLoan(HttpSession httpSession,
                     @PathVariable("idEmprunt") Long idEmprunt ){
         empruntService.extendLoan(idEmprunt);
+    }
+
+    /**
+     * Supprime un prêt après rendu du livre (remet disponible l'exemplaire)
+     * @param idEmprunt
+     */
+    @GetMapping(value = "emprunt/delete/{idEmprunt}")
+    void deleteEmprunt(@PathVariable(name = "idEmprunt") Long idEmprunt){
+        empruntService.deleteEmprunt(idEmprunt);
     }
 }

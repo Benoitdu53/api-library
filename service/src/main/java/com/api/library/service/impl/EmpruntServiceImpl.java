@@ -53,12 +53,12 @@ public class EmpruntServiceImpl implements EmpruntService {
     }
 
     @Override
-    public EmpruntDto addEmprunt(String format, String nameLibrary, CustomerDto customerDto) {
+    public EmpruntDto addEmprunt(Long idBook, String format, String nameLibrary, CustomerDto customerDto) {
 
         EmpruntDto empruntDto = new EmpruntDto();
 
         // Récupère une copy selon le format et la library
-        CopyDto copyDto = CopyMapper.INSTANCE.copyToCopyDto(copyRepository.findFirstByFormatAndAndLibrary_Nom(format, nameLibrary));
+        CopyDto copyDto = CopyMapper.INSTANCE.copyToCopyDto(copyRepository.findFirstByFormatAndLibrary_Nom(format, nameLibrary, idBook));
 
         Calendar calendar = Calendar.getInstance();
         Date date = new Date();
@@ -79,13 +79,22 @@ public class EmpruntServiceImpl implements EmpruntService {
         return empruntDto;
     }
 
+    /**
+     * Supprime un prêt lors du rendu du livre (remet disponible la copy)
+     * @param id
+     */
     @Override
     public void deleteEmprunt(final Long id) {
 
+        Emprunt emprunt = empruntRepository.getEmpruntById(id);
+
+        copyRepository.updateStatusAvailable(emprunt.getCopy().getId());
+
+        empruntRepository.delete(emprunt);
     }
 
     /**
-     * Prolpone un prêt
+     * Prolonge un prêt
      * @param idEmprunt
      */
     @Override
