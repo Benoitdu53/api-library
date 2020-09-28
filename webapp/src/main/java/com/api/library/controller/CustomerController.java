@@ -2,6 +2,7 @@ package com.api.library.controller;
 
 import com.api.library.dto.AuthenticationDto;
 import com.api.library.dto.CustomerDto;
+import com.api.library.mapper.CustomerMapper;
 import com.api.library.service.contract.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -56,5 +57,33 @@ public class CustomerController {
         CustomerDto customerDto = customerService.validationAuthentication(authenticationDto);
 
         return customerDto ;
+    }
+
+    /**
+     * Récupérer l'utilisateur selon son id
+     * @param idCustomer
+     * @return
+     */
+    @GetMapping(value = "user/{idCustomer}")
+    public CustomerDto getCustomerById(@PathVariable("idCustomer") Long idCustomer){
+        return customerService.findCustomerById(idCustomer);
+    }
+
+    /**
+     * Modifie le profil utilisateur
+     * @param customerDto
+     * @return
+     */
+    @PostMapping("updateCustomer")
+    public CustomerDto updateCustomer(@RequestBody CustomerDto customerDto){
+
+        return customerService.updateCustomer(customerDto);
+    }
+
+    @PostMapping("updatePassword")
+    public void updatePassword(@RequestParam(name = "idCustomer") Long idCustomer,
+                               @RequestParam(name = "password") String password){
+
+        customerService.updatePassword(idCustomer, password);
     }
 }

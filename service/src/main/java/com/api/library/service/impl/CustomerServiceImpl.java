@@ -26,16 +26,6 @@ public class CustomerServiceImpl implements CustomerService {
     // -----------------------------------------------------  //
 
     /**
-     *
-     * @param email
-     * @return les utilisateurs par mail
-     */
-    @Override
-    public CustomerDto findByEmail(final String email) {
-        return null;
-    }
-
-    /**
      * Ajoute un utilisateur en base
      * @param customerDto
      * @return l'utilisateur ajouté
@@ -63,9 +53,6 @@ public class CustomerServiceImpl implements CustomerService {
         return CustomerMapper.INSTANCE.customerToCustomerDto(customer);
     }
 
-
-    //  -- Ancienne version -- //
-
     @Override
     public CustomerDto createUser(final CustomerDto customerDto) {
 
@@ -78,7 +65,7 @@ public class CustomerServiceImpl implements CustomerService {
     /**
      *
      * @param authenticationDto
-     * @return l'utilisation si validation ok
+     * @return authentification si validation ok
      */
     @Override
     public CustomerDto validationAuthentication(final AuthenticationDto authenticationDto) {
@@ -93,5 +80,42 @@ public class CustomerServiceImpl implements CustomerService {
         }
 
         return customerDto;
+    }
+
+    /**
+     * Récupère l'utilisateur par son id
+     * @param idCustomer
+     * @return
+     */
+    @Override
+    public CustomerDto findCustomerById(final Long idCustomer) {
+        return CustomerMapper.INSTANCE.customerToCustomerDto(customerRepository.findCustomerById(idCustomer));
+    }
+
+    /**
+     * Update le profil de l'utilisateur
+     * @param customerDto
+     * @return
+     */
+    @Override
+    public CustomerDto updateCustomer(final CustomerDto customerDto) {
+
+        Customer customer = CustomerMapper.INSTANCE.customerDtoToCustomer(customerDto);
+        customerRepository.save(customer);
+
+        return CustomerMapper.INSTANCE.customerToCustomerDto(customer);
+    }
+
+    /**
+     * Update le mot de passe de l'utilisateur
+     * @param idCustomer
+     * @param password
+     */
+    @Override
+    public void updatePassword(final Long idCustomer, String password) {
+
+        password = bCryptPasswordEncoder.encode(password);
+
+        customerRepository.updatePassword(idCustomer, password);
     }
 }
