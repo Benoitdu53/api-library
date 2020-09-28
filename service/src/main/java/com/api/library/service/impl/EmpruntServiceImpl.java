@@ -83,4 +83,24 @@ public class EmpruntServiceImpl implements EmpruntService {
     public void deleteEmprunt(final Long id) {
 
     }
+
+    /**
+     * Prolpone un prêt
+     * @param idEmprunt
+     */
+    @Override
+    public void extendLoan(final Long idEmprunt) {
+        EmpruntDto empruntDto = EmpruntMapper.INSTANCE.empruntToEmpruntDto(empruntRepository.getEmpruntById(idEmprunt));
+
+        Calendar calendar = Calendar.getInstance();
+        Date date = empruntDto.getReturnDate();
+        calendar.setTime(date);
+        calendar.add(Calendar.DATE,28);
+        date = calendar.getTime();
+
+        empruntDto.setReturnDate(date);
+        empruntDto.setExtended(true);
+
+        empruntRepository.save(EmpruntMapper.INSTANCE.empruntDtoToEmprunt(empruntDto));
+    }
 }

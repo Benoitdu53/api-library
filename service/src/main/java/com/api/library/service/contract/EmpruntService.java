@@ -19,4 +19,7 @@ public interface EmpruntService {
 
     // Supprime un emprunt
     void deleteEmprunt(Long id);
+
+    // Prolonge un prêt
+    void extendLoan(Long idEmprunt);
 }

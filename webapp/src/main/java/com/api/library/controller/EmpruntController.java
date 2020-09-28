@@ -6,6 +6,7 @@ import com.api.library.service.contract.EmpruntService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
@@ -42,5 +43,16 @@ public class EmpruntController {
                              CustomerDto customerDto){
 
         return empruntService.addEmprunt(format, nameLibrary, customerDto);
+    }
+
+    /**
+     * Prolonge le pret
+     * @param httpSession
+     * @param idEmprunt
+     */
+    @GetMapping(value = "emprunt/extended/{idEmprunt}")
+    void extendLoan(HttpSession httpSession,
+                    @PathVariable("idEmprunt") Long idEmprunt ){
+        empruntService.extendLoan(idEmprunt);
     }
 }
