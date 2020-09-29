@@ -60,11 +60,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
 
-
         httpSecurity.csrf().disable()
 // n'authentifie pas cette demande particulière
                 .authorizeRequests().antMatchers("/authenticate").permitAll().
                 antMatchers("/books").permitAll().
+                antMatchers("/categorie").permitAll().
+                antMatchers("/user").permitAll().
 // toutes les autres demandes doivent être authentifiées
         anyRequest().authenticated().and().
 // assurez-vous que nous utilisons une session sans état; la session ne sera pas utilisée pour

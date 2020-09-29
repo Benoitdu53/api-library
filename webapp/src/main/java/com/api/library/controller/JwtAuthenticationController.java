@@ -1,8 +1,10 @@
 package com.api.library.controller;
 
 import com.api.library.config.JwtTokenUtil;
+import com.api.library.dto.CustomerDto;
 import com.api.library.model.JwtRequest;
 import com.api.library.model.JwtResponse;
+import com.api.library.service.contract.CustomerService;
 import com.api.library.service.contract.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +14,8 @@ import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 //Exposez une API POST / authentifiez à l'aide de JwtAuthenticationController.
 //        L'API POST obtient le nom d'utilisateur et le mot de passe dans le corps.
@@ -34,16 +38,17 @@ public class JwtAuthenticationController {
     @Autowired
     private JwtUserDetailsService jwtUserDetailsService;
 
+    @Autowired
+    private CustomerService customerService;
+
     // ---------------------------- //
 
     @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
-
     public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
 
         authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
 
         final UserDetails userDetails = jwtUserDetailsService
-
                 .loadUserByUsername(authenticationRequest.getUsername());
 
         final String token = jwtTokenUtil.generateToken(userDetails);
@@ -67,6 +72,18 @@ public class JwtAuthenticationController {
             throw new Exception("INVALID_CREDENTIALS", e);
 
         }
+    }
 
+    @RequestMapping(value = "/customerInfo", method = RequestMethod.GET)
+    public CustomerDto getCustomerInfo(HttpServletRequest httpServletRequest){
+
+        final String requestTokenHeader = httpServletRequest.getHeader("Authorization");
+        String jwtToken;
+
+        jwtToken = requestTokenHeader.substring(7);
+
+        CustomerDto customerDto = customerService.findCustomerByEmail(jwtTokenUtil.getUsernameFromToken(jwtToken));
+
+        return customerDto;
     }
 }

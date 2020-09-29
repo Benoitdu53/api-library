@@ -28,7 +28,7 @@ public class CustomerController {
      * @return l'utilisateur si il existe sinon null
      */
     @PostMapping("user")
-    public CustomerDto getCustomerByEmail(@RequestBody String email){
+    public CustomerDto getCustomerByEmail(@RequestParam(name = "email") String email){
 
         CustomerDto customerDto = customerService.findCustomerByEmail(email);
 
@@ -80,6 +80,11 @@ public class CustomerController {
         return customerService.updateCustomer(customerDto);
     }
 
+    /**
+     * Modifie le mot de passe utilisateur
+     * @param idCustomer
+     * @param password
+     */
     @PostMapping("updatePassword")
     public void updatePassword(@RequestParam(name = "idCustomer") Long idCustomer,
                                @RequestParam(name = "password") String password){
