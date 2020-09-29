@@ -12,7 +12,8 @@ import javax.transaction.Transactional;
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer,Long> {
 
-    Customer findByEmail(String email);
+    @Query("SELECT c FROM Customer c WHERE c.email= :email")
+    Customer findByEmail(@Param("email") String email);
 
     @Query("SELECT c FROM Customer c WHERE c.id = :idSession")
     Customer findCustomerById(@Param("idSession")Long idSession);

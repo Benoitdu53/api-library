@@ -13,6 +13,12 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
+//Exposez une API POST / authentifiez à l'aide de JwtAuthenticationController.
+//        L'API POST obtient le nom d'utilisateur et le mot de passe dans le corps.
+//        À l'aide du Spring Authentication Manager, nous authentifions le nom d'utilisateur et le mot de passe.
+//        Si les informations d'identification sont valides,
+//        un jeton JWT est créé à l'aide de JWTTokenUtil et est fourni au client.
+
 @RestController
 @CrossOrigin
 public class JwtAuthenticationController {

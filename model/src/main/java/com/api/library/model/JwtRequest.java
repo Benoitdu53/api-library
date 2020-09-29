@@ -1,5 +1,7 @@
 package com.api.library.model;
 
+//Cette classe est requise pour stocker le nom d'utilisateur et le mot de passe que nous avons reçus du client.
+
 public class JwtRequest {
 
     private static final long serialVersionUID = 5926468583005150707L;

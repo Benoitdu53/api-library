@@ -13,6 +13,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
+//Le JwtTokenUtil est responsable de l'exécution des opérations JWT telles que la création et la validation.
+//        Il utilise le io.jsonwebtoken.Jwts pour y parvenir.
+
 @Component
 public class JwtTokenUtil implements Serializable {
 

@@ -15,6 +15,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+//Cette classe étend WebSecurityConfigurerAdapter.
+//        Il s'agit d'une classe pratique qui permet la personnalisation de WebSecurity et HttpSecurity.
+
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
@@ -61,6 +64,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.csrf().disable()
 // n'authentifie pas cette demande particulière
                 .authorizeRequests().antMatchers("/authenticate").permitAll().
+                antMatchers("/books").permitAll().
 // toutes les autres demandes doivent être authentifiées
         anyRequest().authenticated().and().
 // assurez-vous que nous utilisons une session sans état; la session ne sera pas utilisée pour

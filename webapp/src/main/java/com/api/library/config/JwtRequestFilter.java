@@ -16,9 +16,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+//Le JwtRequestFilter étend la classe Spring Web Filter OncePerRequestFilter.
+//        Pour toute demande entrante, cette classe Filter est exécutée.
+//        Il vérifie si la demande a un jeton JWT valide.
+//        S'il possède un jeton JWT valide,
+//        il définit l'authentification en contexte pour spécifier que l'utilisateur actuel est authentifié.
+
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
-
 
     @Autowired
     private JwtUserDetailsService jwtUserDetailsService;
@@ -65,11 +70,9 @@ public class JwtRequestFilter extends OncePerRequestFilter {
             if (jwtTokenUtil.validateToken(jwtToken, userDetails)) {
 
                 UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(
-
                         userDetails, null, userDetails.getAuthorities());
 
                 usernamePasswordAuthenticationToken
-
                         .setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
 
 
@@ -78,12 +81,8 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     // que l'utilisateur actuel est authentifié. Alors ça passe le
     // Configurations de sécurité Spring avec succès.
                 SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
-
             }
-
         }
-
         chain.doFilter(request, response);
-
     }
 }
