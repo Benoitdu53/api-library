@@ -14,7 +14,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-09-26T18:17:53+0200",
+    date = "2020-09-29T12:10:50+0200",
     comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 11.0.6 (Ubuntu)"
 )
 public class EmpruntMapperImpl implements EmpruntMapper {
