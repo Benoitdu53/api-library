@@ -63,9 +63,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.csrf().disable()
 // n'authentifie pas cette demande particulière
                 .authorizeRequests().antMatchers("/authenticate").permitAll().
+                antMatchers("/books/*").permitAll().
                 antMatchers("/books").permitAll().
+                antMatchers("/book/*").permitAll().
+                antMatchers("/copies/*").permitAll().
                 antMatchers("/categorie").permitAll().
                 antMatchers("/user").permitAll().
+                antMatchers("/users").permitAll().
 // toutes les autres demandes doivent être authentifiées
         anyRequest().authenticated().and().
 // assurez-vous que nous utilisons une session sans état; la session ne sera pas utilisée pour
