@@ -15,10 +15,11 @@ public interface EmpruntRepository extends JpaRepository<Emprunt,Long> {
     @Query("SELECT e FROM Emprunt e WHERE e.customer.id = :id")
     List<Emprunt> getEmpruntByIdCustomer(@Param("id") Long id);
 
-    // Ralonge un prêt de 4 semaines
-
-
     // Récupère un prêt selon son id
     @Query("SELECT e FROM Emprunt e WHERE e.id = :idEmprunt")
     Emprunt getEmpruntById(@Param("idEmprunt")Long idEmprunt);
+
+    // Récupère les prêts expirés
+    @Query("SELECT e FROM Emprunt e WHERE e.returnDate >= CURRENT_DATE ")
+    List<Emprunt> getEmpruntExpiredLoanDate();
 }

@@ -26,9 +26,7 @@ public class EmpruntController {
     @GetMapping(value = "emprunts/{id}")
     public List<EmpruntDto> displayEmpruntByCustomer(@PathVariable("id") Long id){
 
-        List<EmpruntDto> empruntDtos = empruntService.getEmpruntByIdCustomer(id);
-
-        return empruntDtos;
+        return empruntService.getEmpruntByIdCustomer(id);
     }
 
     /**
@@ -40,7 +38,7 @@ public class EmpruntController {
      * @return
      */
     @PostMapping(value = "emprunt/add/{idBook}")
-    EmpruntDto createEmprunt(@PathVariable("idBook") Long idBook,
+    public EmpruntDto createEmprunt(@PathVariable("idBook") Long idBook,
                              @RequestParam(name = "format") String format,
                              @RequestParam(name = "nameLibrary") String nameLibrary,
                              CustomerDto customerDto){
@@ -54,7 +52,7 @@ public class EmpruntController {
      * @param idEmprunt
      */
     @GetMapping(value = "emprunt/extended/{idEmprunt}")
-    void extendLoan(HttpSession httpSession,
+    public void extendLoan(HttpSession httpSession,
                     @PathVariable("idEmprunt") Long idEmprunt ){
         empruntService.extendLoan(idEmprunt);
     }
@@ -64,7 +62,15 @@ public class EmpruntController {
      * @param idEmprunt
      */
     @GetMapping(value = "emprunt/delete/{idEmprunt}")
-    void deleteEmprunt(@PathVariable(name = "idEmprunt") Long idEmprunt){
+    public void deleteEmprunt(@PathVariable(name = "idEmprunt") Long idEmprunt){
         empruntService.deleteEmprunt(idEmprunt);
+    }
+
+    /**
+     * Récupère les prêts expirés
+     */
+    @GetMapping(value = "empruntDelay")
+    public List<EmpruntDto> getEmpruntExpiredLoanDate(){
+        return empruntService.getEmpruntExpiredLoanDate();
     }
 }

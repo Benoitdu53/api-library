@@ -4,7 +4,6 @@ import com.api.library.dto.CopyDto;
 import com.api.library.dto.CustomerDto;
 import com.api.library.dto.EmpruntDto;
 import com.api.library.mapper.CopyMapper;
-import com.api.library.mapper.CustomerMapper;
 import com.api.library.mapper.EmpruntMapper;
 import com.api.library.model.Emprunt;
 import com.api.library.repository.CopyRepository;
@@ -14,7 +13,6 @@ import com.api.library.service.contract.EmpruntService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -45,11 +43,6 @@ public class EmpruntServiceImpl implements EmpruntService {
         List<Emprunt> emprunts = empruntRepository.getEmpruntByIdCustomer(id);
 
         return EmpruntMapper.INSTANCE.map(emprunts);
-    }
-
-    @Override
-    public void updateEmprunt(final Long id) {
-
     }
 
     @Override
@@ -111,5 +104,14 @@ public class EmpruntServiceImpl implements EmpruntService {
         empruntDto.setExtended(true);
 
         empruntRepository.save(EmpruntMapper.INSTANCE.empruntDtoToEmprunt(empruntDto));
+    }
+
+    /**
+     * Récupère les prêts expirés
+     * @return
+     */
+    @Override
+    public List<EmpruntDto> getEmpruntExpiredLoanDate() {
+        return EmpruntMapper.INSTANCE.map(empruntRepository.getEmpruntExpiredLoanDate());
     }
 }
