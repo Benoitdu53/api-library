@@ -51,13 +51,13 @@ public class CustomerController {
      * @param authenticationDto
      * @return
      */
-    @PostMapping("validationAuthentication")
-    public CustomerDto validationAuthentication(@RequestBody AuthenticationDto authenticationDto){
-
-        CustomerDto customerDto = customerService.validationAuthentication(authenticationDto);
-
-        return customerDto ;
-    }
+//    @PostMapping("validationAuthentication")
+//    public CustomerDto validationAuthentication(@RequestBody AuthenticationDto authenticationDto){
+//
+//        CustomerDto customerDto = customerService.validationAuthentication(authenticationDto);
+//
+//        return customerDto ;
+//    }
 
     /**
      * Récupérer l'utilisateur selon son id
