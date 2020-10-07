@@ -1,0 +1,1 @@
+INSERT INTO library.emprunt (id, emprunt_date, return_date, is_extended, customer_id, copy_id) VALUES (1, '2020-09-22', '2020-12-15', 1, 3, 11);

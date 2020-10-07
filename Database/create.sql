@@ -60,6 +60,7 @@ create table copy
     format     varchar(20) not null,
     book_id    int         not null,
     library_id int         not null,
+    status     varchar(20) not null,
     constraint book_copy_fk
         foreign key (book_id) references book (id),
     constraint library_copy_fk
@@ -73,11 +74,11 @@ create table emprunt
     emprunt_date date                 not null,
     return_date  date                 not null,
     is_extended  tinyint(1) default 0 not null,
-    customer_id      int                  not null,
+    customer_id  int                  not null,
     copy_id      int                  not null,
     constraint copy_emprunt_fk
         foreign key (copy_id) references copy (id),
-    constraint customer._emprunt_fk
+    constraint customer_emprunt_fk
         foreign key (customer_id) references customer (id)
 );
 
