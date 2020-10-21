@@ -5,42 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38a351d2-b8a0-4bca-817d-5fd198804d6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/44903c84712050ea9f76f2cedf4a8985d839580a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/44903c84712050ea9f76f2cedf4a8985d839580a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4d52fee53665c446cb6e90b78817e7b9744b0da2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4d52fee53665c446cb6e90b78817e7b9744b0da2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6f1e647f132ed2d21ddb56ee1882cab4a448911" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6f1e647f132ed2d21ddb56ee1882cab4a448911" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/AuthenticationDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/AuthenticationDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/AuthorDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/AuthorDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/BookDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/BookDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CategorieDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CategorieDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CopyByBookDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CopyByBookDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CopyDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CopyDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CustomerDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CustomerDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/EmpruntDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/EmpruntDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/LibraryDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/LibraryDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CategorieMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CategorieMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CategorieMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CategorieMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CopyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CopyMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CopyMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CopyMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CustomerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CustomerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CustomerMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CustomerMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/EmpruntMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/EmpruntMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/EmpruntMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/EmpruntMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/LibraryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/LibraryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/LibraryMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/LibraryMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Categorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Categorie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Copy.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Copy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Library.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/AuthorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/AuthorMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/BookMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/BookMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CategorieMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CategorieMapperImpl.java" afterDir="false" />
@@ -48,16 +15,8 @@
       <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CustomerMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CustomerMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/EmpruntMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/EmpruntMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/LibraryMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/LibraryMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/EmpruntService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/contract/EmpruntService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/EmpruntServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/EmpruntServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/contract/EmpruntService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/api/library/service/contract/EmpruntService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/EmpruntServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/api/library/service/impl/EmpruntServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/EmpruntController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/EmpruntController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/classes/com/api/library/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/EmpruntController.class" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/classes/com/api/library/controller/EmpruntController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/JwtUserDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/api/library/service/impl/JwtUserDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/JwtAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/api/library/controller/JwtAuthenticationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -379,7 +338,10 @@
       <workItem from="1603205300172" duration="3844000" />
       <workItem from="1603213483103" duration="725000" />
       <workItem from="1603214715582" duration="1626000" />
-      <workItem from="1603263918210" duration="795000" />
+      <workItem from="1603263918210" duration="1556000" />
+      <workItem from="1603279998275" duration="664000" />
+      <workItem from="1603285803027" duration="15000" />
+      <workItem from="1603308877385" duration="1639000" />
     </task>
     <servers />
   </component>
@@ -407,10 +369,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="443" y="83" width="1024" height="852" key="#Project_Structure/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1599901113374" />
-    <state x="418" y="164" width="894" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599594090365">
+    <state x="418" y="164" width="894" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603269618667">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="418" y="164" width="894" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1599594090365" />
+    <state x="418" y="164" width="894" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603269618667" />
     <state x="2688" y="182" width="575" height="647" key="#com.intellij.ide.util.MemberChooser" timestamp="1601976939685">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -450,46 +412,46 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2734" y="419" width="470" height="235" key="Github.ShareDialog/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599234476441" />
-    <state width="1874" height="165" key="GridCell.Tab.0.bottom" timestamp="1603216744069">
+    <state width="1874" height="218" key="GridCell.Tab.0.bottom" timestamp="1603309912745">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="256" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603207932444" />
-    <state width="1874" height="165" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603216744069" />
-    <state width="1874" height="165" key="GridCell.Tab.0.center" timestamp="1603216744069">
+    <state width="1874" height="171" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603264886391" />
+    <state width="1874" height="218" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603309912745" />
+    <state width="1874" height="218" key="GridCell.Tab.0.center" timestamp="1603309912745">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="256" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603207932443" />
-    <state width="1874" height="165" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603216744069" />
-    <state width="1874" height="165" key="GridCell.Tab.0.left" timestamp="1603216744069">
+    <state width="1874" height="171" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603264886391" />
+    <state width="1874" height="218" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603309912745" />
+    <state width="1874" height="218" key="GridCell.Tab.0.left" timestamp="1603309912745">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="256" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603207932443" />
-    <state width="1874" height="165" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603216744069" />
-    <state width="1874" height="165" key="GridCell.Tab.0.right" timestamp="1603216744069">
+    <state width="1874" height="171" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603264886390" />
+    <state width="1874" height="218" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603309912745" />
+    <state width="1874" height="218" key="GridCell.Tab.0.right" timestamp="1603309912745">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="256" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603207932443" />
-    <state width="1874" height="165" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603216744069" />
-    <state width="1874" height="256" key="GridCell.Tab.1.bottom" timestamp="1603207932444">
-      <screen x="0" y="27" width="1920" height="985" />
+    <state width="1874" height="171" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603264886391" />
+    <state width="1874" height="218" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603309912745" />
+    <state width="1874" height="247" key="GridCell.Tab.1.bottom" timestamp="1603309961641">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="256" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603207932444" />
-    <state width="1874" height="248" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603182853222" />
-    <state width="1874" height="256" key="GridCell.Tab.1.center" timestamp="1603207932444">
-      <screen x="0" y="27" width="1920" height="985" />
+    <state width="1874" height="247" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603309961641" />
+    <state width="1874" height="247" key="GridCell.Tab.1.center" timestamp="1603309961641">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="256" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603207932444" />
-    <state width="1874" height="248" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603182853222" />
-    <state width="1874" height="256" key="GridCell.Tab.1.left" timestamp="1603207932444">
-      <screen x="0" y="27" width="1920" height="985" />
+    <state width="1874" height="247" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603309961641" />
+    <state width="1874" height="247" key="GridCell.Tab.1.left" timestamp="1603309961641">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="256" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603207932444" />
-    <state width="1874" height="248" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603182853222" />
-    <state width="1874" height="256" key="GridCell.Tab.1.right" timestamp="1603207932444">
-      <screen x="0" y="27" width="1920" height="985" />
+    <state width="1874" height="247" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603309961641" />
+    <state width="1874" height="247" key="GridCell.Tab.1.right" timestamp="1603309961641">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="256" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603207932444" />
-    <state width="1874" height="248" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603182853222" />
+    <state width="1874" height="247" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603309961641" />
     <state width="1291" height="262" key="GridCell.Tab.2.bottom" timestamp="1599488519962">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -575,10 +537,10 @@
     </state>
     <state x="624" y="241" width="672" height="618" key="run.anything.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600523960636" />
     <state x="2544" y="235" width="672" height="677" key="run.anything.popup/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1599233443346" />
-    <state x="2543" y="214" width="672" height="744" key="search.everywhere.popup" timestamp="1601977010406">
+    <state x="2543" y="214" width="672" height="744" key="search.everywhere.popup" timestamp="1603309432084">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="623" y="222" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1601566991657" />
-    <state x="2543" y="214" width="672" height="744" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1601977010406" />
+    <state x="2543" y="214" width="672" height="744" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1603309432084" />
   </component>
 </project>

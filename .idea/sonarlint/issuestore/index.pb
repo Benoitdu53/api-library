@@ -31,3 +31,8 @@ K
 Database/library_author.sql,2/2/22e2f974617987f70475c210b3b09f3a33812768
 €
 Pservice/src/main/java/com/api/library/service/impl/JwtUserDetailServiceImpl.java,0/7/07f71256524cfacdd01b76f640c95c231de74324
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec

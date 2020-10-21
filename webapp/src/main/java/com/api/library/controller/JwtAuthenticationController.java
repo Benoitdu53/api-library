@@ -70,6 +70,9 @@ public class JwtAuthenticationController {
 
             throw new Exception("INVALID_CREDENTIALS", e);
 
+        } catch (Exception e){
+            e.printStackTrace();
+            throw new Exception("toto");
         }
     }
 

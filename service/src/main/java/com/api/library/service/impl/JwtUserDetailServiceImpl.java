@@ -22,7 +22,7 @@ public class JwtUserDetailServiceImpl implements JwtUserDetailsService {
 
         CustomerDto customerDto = customerService.findCustomerByEmail(username);
 
-        if ((customerDto.getEmail()).equals(username)){
+        if ( (customerDto != null) && (customerDto.getEmail()).equals(username)){
             return new User(customerDto.getEmail(), customerDto.getPassword(), new ArrayList<>());
         }else {
             throw new UsernameNotFoundException("L'utilisateur n'existe pas");

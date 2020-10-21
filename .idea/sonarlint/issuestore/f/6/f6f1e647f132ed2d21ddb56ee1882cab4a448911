@@ -1,12 +1,12 @@
 
-[	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(ÈçïÕ
 e
 java:S4488."JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¶€»²ùÿÿÿÿ
-[	java:S112;"FDefine and throw a dedicated exception instead of using a generic one.(Â††‘
 `	java:S112C"FDefine and throw a dedicated exception instead of using a generic one.(êÆÖËùÿÿÿÿ
-H
-java:S1452/"&Remove usage of generic wildcard type.(¤ƒ¹€úÿÿÿÿ8²ªÛÒ.
-^
-java:S4488L"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ƒÌöÉ
+[	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(ÈçïÕ
 ~
 java:S1488T"cImmediately return this expression instead of assigning it to the temporary variable "customerDto".(¢°¬Ïşÿÿÿÿ
+^
+java:S4488L"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ƒÌöÉ
+[	java:S112;"FDefine and throw a dedicated exception instead of using a generic one.(Â††‘
+H
+java:S1452/"&Remove usage of generic wildcard type.(¤ƒ¹€úÿÿÿÿ8²ªÛÒ.
