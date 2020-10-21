@@ -47,19 +47,6 @@ public class CustomerController {
     }
 
     /**
-     * Validation du login
-     * @param authenticationDto
-     * @return
-     */
-//    @PostMapping("validationAuthentication")
-//    public CustomerDto validationAuthentication(@RequestBody AuthenticationDto authenticationDto){
-//
-//        CustomerDto customerDto = customerService.validationAuthentication(authenticationDto);
-//
-//        return customerDto ;
-//    }
-
-    /**
      * Récupérer l'utilisateur selon son id
      * @param idCustomer
      * @return

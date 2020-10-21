@@ -4,6 +4,7 @@ import com.api.library.dto.CopyDto;
 import com.api.library.dto.CustomerDto;
 import com.api.library.dto.EmpruntDto;
 import com.api.library.mapper.CopyMapper;
+import com.api.library.mapper.CustomerMapper;
 import com.api.library.mapper.EmpruntMapper;
 import com.api.library.model.Emprunt;
 import com.api.library.repository.CopyRepository;
@@ -46,12 +47,14 @@ public class EmpruntServiceImpl implements EmpruntService {
     }
 
     @Override
-    public EmpruntDto addEmprunt(Long idBook, String format, String nameLibrary, CustomerDto customerDto) {
+    public EmpruntDto addEmprunt(Long idBook, String format, String nameLibrary, Long idCustomer) {
 
         EmpruntDto empruntDto = new EmpruntDto();
 
         // Récupère une copy selon le format et la library
         CopyDto copyDto = CopyMapper.INSTANCE.copyToCopyDto(copyRepository.findFirstByFormatAndLibrary_Nom(format, nameLibrary, idBook));
+
+        CustomerDto customerDto = CustomerMapper.INSTANCE.customerToCustomerDto(customerRepository.findCustomerById(idCustomer));
 
         Calendar calendar = Calendar.getInstance();
         Date date = new Date();

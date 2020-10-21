@@ -1,11 +1,14 @@
 package com.api.library.controller;
 
+import com.api.library.config.JwtTokenUtil;
 import com.api.library.dto.CustomerDto;
 import com.api.library.dto.EmpruntDto;
+import com.api.library.service.contract.CustomerService;
 import com.api.library.service.contract.EmpruntService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
@@ -15,6 +18,12 @@ public class EmpruntController {
     // ----------------- Injections de dépendances ----------------- //
     @Autowired
     private EmpruntService empruntService;
+
+    @Autowired
+    private CustomerService customerService;
+
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil;
 
     // -----------------------------------------------------  //
 
@@ -32,18 +41,26 @@ public class EmpruntController {
     /**
      * Ajoute un prêt
      * @param idBook
-     * @param customerDto
      * @param format
      * @param nameLibrary
      * @return
      */
     @PostMapping(value = "emprunt/add/{idBook}")
     public EmpruntDto createEmprunt(@PathVariable("idBook") Long idBook,
-                             @RequestParam(name = "format") String format,
-                             @RequestParam(name = "nameLibrary") String nameLibrary,
-                             CustomerDto customerDto){
+                                    @RequestParam(name = "format") String format,
+                                    @RequestParam(name = "nameLibrary") String nameLibrary,
+                                    HttpServletRequest httpServletRequest){
 
-        return empruntService.addEmprunt(idBook, format, nameLibrary, customerDto);
+        final String requestTokenHeader = httpServletRequest.getHeader("Authorization");
+        String jwtToken;
+
+        jwtToken = requestTokenHeader.substring(7);
+
+        CustomerDto customerDto = customerService.findCustomerByEmail(jwtTokenUtil.getUsernameFromToken(jwtToken));
+
+        Long idCustomer = customerDto.getId();
+
+        return empruntService.addEmprunt(idBook, format, nameLibrary, idCustomer);
     }
 
     /**
