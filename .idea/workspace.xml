@@ -5,71 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38a351d2-b8a0-4bca-817d-5fd198804d6d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20a20214dbdb9470d55edc497ebd213ca2e0cce1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/2/22e2f974617987f70475c210b3b09f3a33812768" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/44903c84712050ea9f76f2cedf4a8985d839580a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/4752b7ef9948c36f0ef26fbeca781a003fabe2d3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4d52fee53665c446cb6e90b78817e7b9744b0da2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/5586e58f619fcb543a21c2a8f699bc2ab2671e89" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d865fb4ac51ab457c7828875db37d6bfb87be3a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/6233768f02fb534d4b1e65e2f15f3267d3a8328d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/701a745d337ad58f169a4531f48a2895cd855947" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71bdaf890aad271cd5f9315c6307fcca01620321" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89411f098d3b6f7019f696fc30ecdab8590a223e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/96b0f03ec1903e7d24cd6b04234031be7d0b8343" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f2afb513513ec903ef8e9a9085134e795f040478" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6f1e647f132ed2d21ddb56ee1882cab4a448911" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/feb6b44e9226f0cbd8a0c4ea8642932134b52cbd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/AuthenticationDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/AuthenticationDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/AuthorDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/AuthorDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/BookDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/BookDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CategorieDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CategorieDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CopyByBookDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CopyByBookDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CopyDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CopyDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CustomerDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/CustomerDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/EmpruntDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/EmpruntDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/LibraryDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/dto/LibraryDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/AuthorMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/BookMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CategorieMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CategorieMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CategorieMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CategorieMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CopyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CopyMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CopyMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CopyMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CustomerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CustomerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CustomerMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/CustomerMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/EmpruntMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/EmpruntMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/EmpruntMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/EmpruntMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/LibraryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/LibraryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/LibraryMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/mapper/LibraryMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Categorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Categorie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Copy.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Copy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Emprunt.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Emprunt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/JwtRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/JwtRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/JwtResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/JwtResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/api/library/model/Library.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/AuthorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/AuthorMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/BookMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/BookMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CategorieMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CategorieMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CopyMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CopyMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CustomerMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CustomerMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/EmpruntMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/EmpruntMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/LibraryMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/LibraryMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/model-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/repository-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/repository-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/webapp-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/webapp-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -408,12 +379,23 @@
       <workItem from="1603263918210" duration="1556000" />
       <workItem from="1603279998275" duration="664000" />
       <workItem from="1603285803027" duration="15000" />
-      <workItem from="1603308877385" duration="3914000" />
+      <workItem from="1603308877385" duration="4671000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -577,6 +559,10 @@
     </state>
     <state x="783" y="234" width="755" height="583" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1600934187179" />
     <state x="2703" y="227" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1601979461986" />
+    <state x="100" y="100" width="1720" height="812" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1603313552851">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="100" y="100" width="1720" height="812" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/1920.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1603313552851" />
     <state x="635" y="54" width="885" height="661" key="dock-window-1" timestamp="1599753156742">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
