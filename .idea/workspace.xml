@@ -23,37 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38a351d2-b8a0-4bca-817d-5fd198804d6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Database/create_database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/library_insert_01.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/library_author.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/library_book.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/library_insert_02.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/library_categorie.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/library_copy.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/library_insert_03.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/library_customer.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/library_emprunt.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/library_library.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/AuthorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/AuthorMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/BookMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/BookMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CategorieMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CategorieMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CopyMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CopyMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CustomerMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/CustomerMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/EmpruntMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/EmpruntMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/LibraryMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/generated-sources/annotations/com/api/library/mapper/LibraryMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/model-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/repository-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/repository-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/surefire-reports/TEST-com.api.library.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/surefire-reports/TEST-com.api.library.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/surefire-reports/com.api.library.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/surefire-reports/com.api.library.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/webapp-1.0-SNAPSHOT-exec.jar" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/webapp-1.0-SNAPSHOT-exec.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/webapp-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/webapp-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/target/webapp-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/target/webapp-1.0-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,17 +124,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -406,6 +365,7 @@
       <workItem from="1603308877385" duration="5371000" />
       <workItem from="1603786756459" duration="4014000" />
       <workItem from="1603801611269" duration="4473000" />
+      <workItem from="1603820973389" duration="2526000" />
     </task>
     <servers />
   </component>
