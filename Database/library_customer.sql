@@ -1,3 +1,0 @@
-INSERT INTO library.customer (id, first_name, last_name, adress, postal_code, city, email, password) VALUES (3, 'tata', 'test', '3 rue de ici', '56500', 'totoland', 'test@test.fr', '$2a$10$AoKHZdtNnmqcb9B0J588m.WXJGUql3J38KYVYSdJ/VbxnRWWiIy2.');
-INSERT INTO library.customer (id, first_name, last_name, adress, postal_code, city, email, password) VALUES (8, 'Bruno', 'Brichet', '3 rue de labas', '75200', 'Devland', 'benoit@test.fr', '$2a$10$4bEdMuYgdQEKBJdK2mUMOuw9QC4UVPh9uKr6rtGKQf3.NKHsHmdPS');
-INSERT INTO library.customer (id, first_name, last_name, adress, postal_code, city, email, password) VALUES (9, 'admin', 'admin', 'admin', 'admin', 'admin', 'admin@admin.fr', '$2a$10$a32qexgK4tce33bNBmOSdeu88Q8BNRRwQCGfx0gjSm.ZQ.6LWgI0u');
